@@ -1,1 +1,15 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-family: "Work Sans", sans-serif;
+  --c1:#002913;
+  --c2:#254412;
+  --c3:#3D6A20;
+  --c4:#7CA732;
+  --c5:#ED4C1D;
+  color: #282828;
+  --txt-light:#FFFFFF;
+  --txt-dark:#282828;
+  --tit-h1:#254412;
+  -txt-btn-c1: #ED4C1D;
+  -txt-btn-c2: #FFFFFF;
+  -color-btn: #ED4C1D;
+}/*# sourceMappingURL=style.css.map */
