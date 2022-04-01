@@ -32,7 +32,27 @@ function swiperPatrocinadores(){
       });
 }
 
+function swiperGaleriaEvento(){
+    const swiper = new Swiper(".swiperGaleriaEvent", {
+            slidesPerView:3,
+            spaceBetween:20,
+            navigation: {
+            nextEl: ".swiperGaleriaEvent .swiper-button-next",
+            prevEl: ".swiperGaleriaEvent .swiper-button-prev",
+            },
+      });
+}
 
+const agendaDia = document.querySelectorAll('.dia_aside');
+const agendaAuditorio = document.querySelectorAll('.auditorias_aside');
+
+$(agendaDia).click(function(){
+    $(agendaDia).removeClass('active_dia');
+    $(agendaAuditorio).slideUp();
+    $(this).toggleClass('active_dia');
+    $(this).find('.auditorias_aside').slideToggle();
+});
 
 sliderHero();
 swiperPatrocinadores();
+swiperGaleriaEvento();

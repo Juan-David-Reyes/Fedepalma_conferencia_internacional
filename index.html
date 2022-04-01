@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Quicksand:wght@700&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="plugins/lightbox/css/lightbox.min.css">
         <link rel="stylesheet" href="plugins/swiperSlider/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -168,17 +169,222 @@
             </section>
         </div>
 
-
         <section class="s_galeria_e">
             <div class="center">
-                
+                <div class="tit_section">
+                    <div class="subtitle al_left">
+                        Galería del evento
+                    </div>
+                </div>
+                <div class="cont_galeria_event">
+                    <!-- Swiper -->
+                    <div class="swiper swiperGaleriaEvent">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219"  src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                            <div class="swiper-slide" data-lightbox="roadtrip">
+                                <img width="343" height="219" src="images/diseno/1-home/img_event.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </section>
 
         <section class="s_agenda">
             <div class="center">
                 <div class="cont_gen_agenda">
-
+                    <div class="tit_section">
+                        <h3>
+                            <img width="65" height="46" src="images/diseno/1-home/icon_agenda.svg" alt="">
+                            Agenda
+                        </h3>
+                        <div class="tit_agenda_fecha">
+                            Martes 27 de Septiembre
+                        </div>
+                    </div>
+                    <div class="c_agenda">
+                        <aside>
+                            <nav>
+                                <ul>
+                                    <li class="dia_aside active_dia">
+                                        <a class="">Día 1</a>
+                                        <div class="auditorias_aside">
+                                            <a class="audt_aside active_audt">Auditorio 1</a>
+                                            <a class="audt_aside">Auditorio 2</a>
+                                            <a class="audt_aside">Auditorio 3</a>
+                                        </div>
+                                    </li>
+                                    <li class="dia_aside">
+                                        <a class="">Día 2</a>
+                                        <div class="auditorias_aside">
+                                            <a class="audt_aside">Auditorio 1</a>
+                                            <a class="audt_aside">Auditorio 2</a>
+                                            <a class="audt_aside">Auditorio 3</a>
+                                        </div>
+                                    </li>
+                                    <li class="dia_aside">
+                                        <a class="">Día 3</a>
+                                        <div class="auditorias_aside">
+                                            <a class="audt_aside">Auditorio 1</a>
+                                            <a class="audt_aside">Auditorio 2</a>
+                                            <a class="audt_aside">Auditorio 3</a>
+                                        </div>
+                                    </li>
+                                    <li class="dia_aside">
+                                        <a class="">Día 4</a>
+                                        <div class="auditorias_aside">
+                                            <a class="audt_aside">Auditorio 1</a>
+                                            <a class="audt_aside">Auditorio 2</a>
+                                            <a class="audt_aside">Auditorio 3</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <div class="col_agenda_info">
+                            <div class="tit_agenda_info">
+                                <img width="22" height="22" src="images/diseno/1-home/icon_modulo.svg" alt=""> Módulo
+                            </div>
+                            <h3 class="title_modulo">
+                                Manejo del cultivo, biotecnología y mejoramiento de la palma de aceite
+                            </h3>
+                            <div class="col_gen_modulos">
+                                <div class="modulo">
+                                    <div class="divisor_info_modulo">
+                                        <div>
+                                            <strong> Sesión 1: </strong> Manejo sostenible del cultivo <span class="fas fa-chevron-up"></span>
+                                        </div>
+                                    </div>
+                                    <div class="cont_cards_modulos">
+                                        <div class="card_modulo">
+                                            <div class="card_horario">
+                                                9:00 A.M. a 10:30 A.M.
+                                            </div>
+                                            <div class="card_datos">
+                                                <div class="name_conferencia">
+                                                    Nombre de conferencia 
+                                                </div>
+                                                <div class="name_speaker">
+                                                    Juan David Reyes
+                                                </div>
+                                                <div class="tags_add">
+                                                    <div class="item_tag">
+                                                        <strong> Idioma: </strong> Inglés
+                                                    </div>
+                                                    <div class="item_tag">
+                                                        <strong> País: </strong> EE.UU
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_modulo">
+                                            <div class="card_horario">
+                                                9:00 A.M. a 10:30 A.M.
+                                            </div>
+                                            <div class="card_datos">
+                                                <div class="name_conferencia">
+                                                    Nombre de conferencia 
+                                                </div>
+                                                <div class="name_speaker">
+                                                    Juan David Reyes
+                                                </div>
+                                                <div class="tags_add">
+                                                    <div class="item_tag">
+                                                        <strong> Idioma: </strong> Inglés
+                                                    </div>
+                                                    <div class="item_tag">
+                                                        <strong> País: </strong> EE.UU
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_modulo">
+                                            <div class="card_horario">
+                                                9:00 A.M. a 10:30 A.M.
+                                            </div>
+                                            <div class="card_datos">
+                                                <div class="name_conferencia">
+                                                    Nombre de conferencia 
+                                                </div>
+                                                <div class="name_speaker">
+                                                    Juan David Reyes
+                                                </div>
+                                                <div class="tags_add">
+                                                    <div class="item_tag">
+                                                        <strong> Idioma: </strong> Inglés
+                                                    </div>
+                                                    <div class="item_tag">
+                                                        <strong> País: </strong> EE.UU
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_modulo">
+                                            <div class="card_horario">
+                                                9:00 A.M. a 10:30 A.M.
+                                            </div>
+                                            <div class="card_datos">
+                                                <div class="name_conferencia">
+                                                    Nombre de conferencia 
+                                                </div>
+                                                <div class="name_speaker">
+                                                    Juan David Reyes
+                                                </div>
+                                                <div class="tags_add">
+                                                    <div class="item_tag">
+                                                        <strong> Idioma: </strong> Inglés
+                                                    </div>
+                                                    <div class="item_tag">
+                                                        <strong> País: </strong> EE.UU
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_modulo">
+                                            <div class="card_horario">
+                                                9:00 A.M. a 10:30 A.M.
+                                            </div>
+                                            <div class="card_datos">
+                                                <div class="name_conferencia">
+                                                    Nombre de conferencia 
+                                                </div>
+                                                <div class="name_speaker">
+                                                    Juan David Reyes
+                                                </div>
+                                                <div class="tags_add">
+                                                    <div class="item_tag">
+                                                        <strong> Idioma: </strong> Inglés
+                                                    </div>
+                                                    <div class="item_tag">
+                                                        <strong> País: </strong> EE.UU
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -277,6 +483,7 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
             <script src="plugins/swiperSlider/swiper-bundle.min.js"></script>
+            <script src="plugins/lightbox/js/lightbox.js"></script>
             <script src="js/main.js"></script>
 
             <div class="c_footer">
