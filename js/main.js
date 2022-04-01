@@ -9,16 +9,30 @@ $(document).ready(function(){
 
 function sliderHero(){
     const swiper = new Swiper(".cont_gen_hero .sliderHero", {
-        navigation: {
-          nextEl: ".cont_gen_hero .swiper-button-next",
-          prevEl: ".cont_gen_hero .swiper-button-prev",
-        },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-        parallax: true,
+            navigation: {
+            nextEl: ".cont_gen_hero .swiper-button-next",
+            prevEl: ".cont_gen_hero .swiper-button-prev",
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            parallax: true,
       });
 }
 
+function swiperPatrocinadores(){
+    const swiper = new Swiper(".c_gen_slider_patrocinadores .swiperPatrocinadores", {
+            slidesPerView:7,
+            spaceBetween:30,
+            navigation: {
+            nextEl: ".c_gen_slider_patrocinadores .swiper-button-next",
+            prevEl: ".c_gen_slider_patrocinadores .swiper-button-prev",
+            },
+      });
+}
+
+
+
 sliderHero();
+swiperPatrocinadores();
