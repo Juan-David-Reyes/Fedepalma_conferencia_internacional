@@ -930,11 +930,15 @@ footer {
 }
 .audt_aside span {
   position: absolute;
-  top: 0;
+  top: 20%;
   bottom: 0;
   right: 10px;
   margin: auto;
   color: var(--c5);
+  display: none;
+}
+.audt_aside.active_audt {
+  display: block;
 }
 
 /* ************ */
