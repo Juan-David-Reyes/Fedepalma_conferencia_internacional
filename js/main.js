@@ -10,6 +10,7 @@ $(document).ready(function(){
 
     $('.divisor_info_modulo').click(function(){
         $('.cont_cards_modulos').slideUp();
+        $('.divisor_info_modulo').removeClass('active');
         $(this).toggleClass('active');
         $(this).next('.cont_cards_modulos').slideToggle();
     });
