@@ -471,7 +471,7 @@ footer {
     right: 80px;
 }
 
-.cont_bg_sections{
+.cont_bg_sections, .s_form_conference{
     background: url('../images/diseno/1-home/bg_sections.png');
     background-size: cover;
     background-position: center top;
@@ -1422,14 +1422,73 @@ footer {
 }
 
 .s_form_conference{
-    
+    padding: 40px 0 100px;
+    box-sizing: border-box;
 }
 
+.c_slider_documentos{
+    position: relative;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.s_documentos{
+    padding: 30px 0;
+}
+.c_documentos{
+    .tit_section{
+        h3{
+            margin: 30px 0 20px;
+        }
+        div{
+            max-width: 700px;
+        }
+    }
+}
+.calendar_x1, .calendar_x2{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    h3{
+        text-align: center;
+        color: var(--txt-light);
+        font-size: 32px;
+        margin: 0 20px 20px;
+    }
+    div{
+        text-align: center;
+        color: var(--txt-light);
+        font-size: 15px;
+    }
+}
 
+.calendar_x2{
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 0;
+}
 
+.swiperCalendar{
+    .swiper-slide{
+        flex-direction: column;
+        background-color: var(--c1);
+        border-radius: 8px;
+        > div:last-child:not(.calendar_x1){
+            color: var(--txt-light);
+            font-size: 13px;
+            padding: 0 20px 20px;
+            box-sizing: border-box;
+        }
+    }
+}
 
-
-
+.c_calendar_slider{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
 
 
 

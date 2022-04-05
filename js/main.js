@@ -95,6 +95,74 @@ function swiperGaleriaEvento(){
       });
 }
 
+function swiperDocumentos(){
+  const swiper = new Swiper(".c_slider_documentos .swiperDocumentos", {
+          slidesPerView:1,
+          spaceBetween:10,
+          navigation: {
+          nextEl: ".c_slider_documentos .swiper-button-next",
+          prevEl: ".c_slider_documentos .swiper-button-prev",
+          },
+          breakpoints: {
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 6
+              },
+              480: {
+                  slidesPerView: 2,
+                  spaceBetween: 6
+                },
+              // when window width is >= 480px
+              750: {
+                slidesPerView: 3,
+                spaceBetween: 10
+              },
+              // when window width is >= 640px
+              980: {
+                slidesPerView: 4,
+                spaceBetween: 20
+              }
+          }
+    });
+}
+
+function swiperCalendar(){
+  const swiper = new Swiper(".c_calendar_slider .swiperCalendar", {
+          slidesPerView:1,
+          spaceBetween:10,
+          navigation: {
+            nextEl: ".c_calendar_slider .swiper-button-next",
+            prevEl: ".c_calendar_slider .swiper-button-prev",
+          },
+          breakpoints: {
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 6
+              },
+              480: {
+                  slidesPerView: 1,
+                  spaceBetween: 6
+                },
+              // when window width is >= 480px
+              750: {
+                slidesPerView: 2,
+                spaceBetween: 10
+              },
+              // when window width is >= 640px
+              980: {
+                slidesPerView: 3,
+                spaceBetween: 20
+              }
+          }
+    });
+}
+
+
+
+
+
 const agendaDia = document.querySelectorAll('.dia_aside');
 const agendaAuditorio = document.querySelectorAll('.auditorias_aside');
 
@@ -108,3 +176,5 @@ $(agendaDia).click(function(){
 sliderHero();
 swiperPatrocinadores();
 swiperGaleriaEvento();
+swiperDocumentos();
+swiperCalendar();
