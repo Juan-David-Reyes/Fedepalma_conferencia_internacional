@@ -6,6 +6,11 @@ $(document).ready(function(){
         $('.navbar_desk ul').toggleClass('active_nav_m');
     });
 
+    $('.btn_filter_agenda').click(function(){
+        $('.c_agenda aside').toggleClass('subfilter_active');
+    });
+    
+
     // SLIDE SESIONES
 
     $('.divisor_info_modulo').click(function(){
@@ -32,23 +37,61 @@ function sliderHero(){
 
 function swiperPatrocinadores(){
     const swiper = new Swiper(".c_gen_slider_patrocinadores .swiperPatrocinadores", {
-            slidesPerView:7,
-            spaceBetween:30,
+            slidesPerView:1,
+            spaceBetween:6,
             navigation: {
             nextEl: ".c_gen_slider_patrocinadores .swiper-button-next",
             prevEl: ".c_gen_slider_patrocinadores .swiper-button-prev",
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 6
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 6
+                  },
+                // when window width is >= 480px
+                750: {
+                  slidesPerView: 5,
+                  spaceBetween: 10
+                },
+                // when window width is >= 640px
+                980: {
+                  slidesPerView: 7,
+                  spaceBetween: 20
+                }
+            }
       });
 }
 
 function swiperGaleriaEvento(){
     const swiper = new Swiper(".swiperGaleriaEvent", {
-            slidesPerView:3,
+            slidesPerView:1,
             spaceBetween:20,
             navigation: {
             nextEl: ".swiperGaleriaEvent .swiper-button-next",
             prevEl: ".swiperGaleriaEvent .swiper-button-prev",
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                // when window width is >= 640px
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40
+                }
+            }
       });
 }
 

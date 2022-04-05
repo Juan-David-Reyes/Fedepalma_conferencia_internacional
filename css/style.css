@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --c1: #002913;
   --c2: #254412;
@@ -683,6 +684,7 @@ footer {
   background: linear-gradient(0deg, #254412, #35601a), linear-gradient(0deg, #0e7b41, #034220), url("../images/diseno/1-home/img_agenda_bg.png");
   background-blend-mode: multiply, color, normal;
   background-size: cover;
+  overflow: hidden;
 }
 
 .cont_gen_agenda {
@@ -954,7 +956,6 @@ footer {
   right: 10px;
   margin: auto;
   color: var(--c5);
-  display: none;
 }
 .audt_aside.active_audt {
   display: block;
@@ -1166,12 +1167,37 @@ footer {
   margin: 20px 0 10px;
 }
 
+.btn_filter_agenda {
+  display: none;
+}
+
+.c_agenda aside {
+  transition: 300ms ease-out;
+}
+
+.subfilter_active {
+  transform: translateX(0%) !important;
+}
+
 /* ************ */
 /* RESPONSIVE */
 /* ************ */
+@media screen and (max-width: 1650px) {
+  .sliderHero .swiper-slide {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
 @media screen and (max-width: 1200px) {
   header .header .navbar_desk ul {
     gap: 10px;
+  }
+
+  .sliderHero .swiper-slide {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .sliderHero .swiper-slide .cont_desc_hero_txt h2 {
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -1230,6 +1256,54 @@ footer {
 
   .div_cols_bene {
     gap: 30px;
+  }
+
+  .sliderHero .swiper-slide {
+    padding: 0 70px;
+  }
+
+  .cont_gen_hero .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+  }
+
+  .cont_gen_hero .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+  }
+
+  .cont_gen_banner_visitas .txt_banner_1 {
+    font-size: 32px;
+  }
+
+  .cont_visitas_banner span {
+    font-size: 40px;
+  }
+
+  .cont_visitas_banner .cont_txt_visitas div {
+    font-size: 20px;
+  }
+
+  .cont_cards_modulos .card_modulo {
+    padding: 10px;
+  }
+
+  .cont_cards_modulos .card_modulo .card_datos .name_conferencia {
+    font-size: 15px;
+  }
+
+  .c_agenda nav ul li.active_dia::after, .c_agenda nav ul li.active_dia::before {
+    display: none;
+  }
+
+  .cont_cards_modulos .card_modulo .card_datos .name_speaker {
+    font-size: 10px;
+  }
+
+  .divisor_info_modulo div {
+    text-align: left;
+  }
+
+  .c_agenda nav ul li {
+    border-radius: 8px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1306,12 +1380,202 @@ footer {
     font-size: 28px;
   }
 
+  .tit_section h3 img {
+    width: 11%;
+  }
+
   .s_beneficios_int {
     padding: 20px 0 60px;
+  }
+
+  .sliderHero .swiper-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .sliderHero .swiper-slide .cont_desc_hero_txt h2 {
+    text-align: center;
+  }
+
+  .sliderHero .swiper-slide .cont_desc_hero_txt .desc_txt {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .sliderHero .swiper-slide .img_bg_slider_hero::before {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 0%, rgba(255, 255, 255, 0.83) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 80.31%);
+  }
+
+  .sliderHero .swiper-slide .cont_desc_hero_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cont_gen_ini_evento {
+    grid-template-columns: 1fr;
+  }
+
+  .cont_ctas {
+    flex-wrap: wrap;
+  }
+
+  .col_pic_event picture {
+    max-width: initial;
+  }
+
+  .cont_gen_banner_visitas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cont_visitas_banner {
+    justify-content: center;
+  }
+
+  .btn_filter_agenda {
+    display: none;
+  }
+
+  .btn_filter_agenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .cont_gen_agenda .tit_section {
+    gap: 20px;
+  }
+
+  .cont_gen_agenda .tit_section .tit_agenda_fecha {
+    font-size: 14px;
+  }
+
+  .cont_gen_agenda .tit_section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 20px;
+  }
+
+  .cont_gen_agenda {
+    padding: 10px 0;
+  }
+
+  .c_agenda aside {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    transform: translateX(100%);
+    z-index: 10;
+    background: var(--c3);
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .c_agenda {
+    grid-template-columns: 1fr;
+  }
+
+  .col_agenda_info {
+    border-radius: 8px;
+  }
+
+  .col_agenda_info .title_modulo {
+    font-size: 22px;
+  }
+
+  .divisor_info_modulo::before {
+    display: none;
+  }
+
+  .divisor_info_modulo::after {
+    display: none;
+  }
+
+  .divisor_info_modulo div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .divisor_info_modulo div {
+    font-size: 14px;
+  }
+
+  .item_contador {
+    padding: 0 10px;
+  }
+
+  .item_contador span {
+    font-size: 30px;
+  }
+
+  .item_contador .label_contador {
+    font-size: 16px;
+  }
+
+  .s_contador {
+    margin-top: 0;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .s_incitacion_evento {
+    padding: 20px 0 30px;
+  }
+
+  .s_galeria_e {
+    padding: 20px 0;
+  }
+
+  .cont_galeria_event {
+    margin-top: 30px;
+  }
+
+  .s_agenda {
+    padding-bottom: 20px;
+  }
+
+  .c_agenda nav ul li {
+    width: 100%;
+  }
+
+  .cont_cards_modulos {
+    padding: 0;
+  }
+
+  .cont_cards_modulos .card_modulo {
+    pad: 10px;
+  }
+
+  .cont_cards_modulos .card_modulo .card_horario {
+    font-size: 13px;
+    margin-right: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 480px) {
   header .header .navbar_desk ul li a {
     font-size: 1.2em;
+  }
+
+  .tit_section h3  {
+    font-size: 24px;
+  }
+
+  .sliderHero .swiper-slide {
+    padding: 0px 30px;
+  }
+
+  .sliderHero .swiper-slide .cont_desc_hero_txt .desc_txt {
+    font-size: 14px;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
