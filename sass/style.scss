@@ -807,6 +807,7 @@ footer {
     align-items: center;
     gap: 10px;
     position: relative;
+    margin-bottom: 14px;
     div{
         display: flex;
         position: relative;
@@ -835,7 +836,7 @@ footer {
         z-index: 1;
     }
     span{
-        background-color: var(--color-btn);
+        background-color: #DADADA;
         font-size: 18px;
         border-radius: 100px;
         width: 24px;
@@ -843,16 +844,28 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--txt-light);
+        color: var(--txt-dark);
+        transform: rotate(0deg);
+        transition: 300ms ease;
+    }
+    &.active{
+        span{
+            transform: rotate(180deg);
+            background-color: var(--color-btn);
+            color: var(--txt-light);
+        }
     }
 }
-
+.displayGrid{
+    display: grid!important;
+}
 .cont_cards_modulos{
     padding: 20px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    display: none;
     .card_modulo{
         background: var(--c4);
         border-radius: 20px;
@@ -860,6 +873,21 @@ footer {
         grid-template-columns: 1fr 3fr;
         padding: 20px;
         box-sizing: border-box;
+        margin-bottom: 10px;
+        &.intermedio{
+            background: #F0F0F0;
+            border: 1px solid #DBDBDB;
+            box-sizing: border-box;
+            border-radius: 20px;
+            grid-template-columns: 1.5fr 2fr;
+            .card_horario{
+                color: var(--c1);
+                border-right: 1px solid var(--c1);
+            }
+            .card_datos{
+                color: var(--c1);
+            }
+        }
         .card_horario{
             font-size: 24px;
             font-weight: 700;
@@ -901,7 +929,21 @@ footer {
     }
 }
 
-
+.audt_aside.{
+    position: relative;
+    span{
+        position: absolute;
+        top: 20%;
+        bottom: 0;
+        right: 10px;
+        margin: auto;
+        color: var(--c5);
+        display: none;
+    }
+    &.active_audt{
+        display: block;
+    }
+}
 
 
 

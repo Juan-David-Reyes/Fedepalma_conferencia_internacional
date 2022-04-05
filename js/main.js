@@ -5,6 +5,14 @@ $(document).ready(function(){
     $('.close_mobile').click(function(){
         $('.navbar_desk ul').toggleClass('active_nav_m');
     });
+
+    // SLIDE SESIONES
+
+    $('.divisor_info_modulo').click(function(){
+        $('.cont_cards_modulos').slideUp();
+        $(this).toggleClass('active');
+        $(this).next('.cont_cards_modulos').slideToggle();
+    });
 });
 
 function sliderHero(){
