@@ -242,6 +242,7 @@ header {
     font-size: 15px;
     text-transform: uppercase;
     text-align: center;
+    outline: 0;
     span{
         margin-left: 10px;
     }
@@ -1173,6 +1174,263 @@ footer {
     transform: translateX(0%)!important;
 }
 
+.s_txt_desc_section{
+    padding: 60px 0;
+    box-sizing: border-box;
+    .c_txt_desc_s{
+        text-align: center;
+        max-width: 750px;
+        margin: auto;
+    }
+}
+
+.c_info_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    .card_info_contact{
+        border-radius: 8px;
+        background: #F3F3F3;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        max-width: 253px;
+        min-height: 258px;
+        overflow: hidden;
+        &:hover{
+            picture{
+                opacity: 1;
+            }
+            h5, h2{
+                color: var(--txt-light);
+            }
+            .datos_info a{
+                color: var(--txt-light);
+            }
+        }
+        picture{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            z-index: 1;
+            opacity: 0;
+            transition: 300ms ease;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(360deg, #395111d3 0%, rgba(124, 167, 50, 0.613) 100%), #7ca7329b;
+                background-blend-mode: normal, color;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h5{
+            margin: 0 0 10px;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 5;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        h2{
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            margin: 10px 0 40px;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        .datos_info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            gap: 8px;
+            a{
+                text-decoration: none;
+                text-align: left;
+                color: var(--txt-dark);
+                display: block;
+                font-size: 14px;
+                &:hover{
+                    text-decoration: underline;
+                }
+                span{
+                    font-weight: 400;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
+.info_contact{
+    padding: 0 0 60px;
+    box-sizing: border-box;
+}
+
+.s_form_contact{
+    background: url('../images/diseno/1-home/bg_sections.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    box-sizing: border-box;
+    .subtitle::before{
+        display: none;
+    }
+}
+
+.c_form_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.formulario_c{
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 39px -15px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont_input_x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.cont_input{
+    position: relative;
+    width: 100%;
+    input, select, textarea{
+        width: 100%;
+        border: 1px solid #BBBBBB;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: 0;
+        font-size: 14px;
+        height: 35px;
+        padding: 4px 12px;
+        transition: 300ms ease;
+    }
+    input:not(:placeholder-shown) + label, select:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label{
+        top: -7px;
+        font-size: 12px;
+        color: var(--c1);
+    }
+    label{
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        font-size: 14px;
+        background-color: #FFFFFF;
+        padding: 0 4px;
+        box-sizing: border-box;
+        color: #969696;
+        transition: 300ms ease;
+        cursor: text;
+    }
+    &:focus-within{
+        input{
+            border: 1px solid var(--c1);
+        }
+        label{
+            top: -7px;
+            font-size: 12px;
+            color: var(--c1);
+        }
+    }
+}
+
+.cont_chk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input[type=checkbox]{
+        cursor: pointer;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        outline: 0;
+        background-color: #DADADA;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:checked{
+            background-color: var(--color-btn);
+            &:before{
+                content: '\f00c';
+                font-family: 'Font Awesome 5 Pro';
+                color: var(--txt-light);
+            }
+        }
+    }
+    label{
+        font-size: 14px;
+    }
+}
+
+.cont_btn_submit{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+.cont_input textarea{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    height: initial;
+}
+
+.cont_divider{
+    width: 100%;
+    height: 1px;
+    background-color: #BBBBBB;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.s_form_conference{
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -1284,6 +1542,13 @@ footer {
     }
     .c_agenda nav ul li{
         border-radius: 8px!important;
+    }
+    .c_info_contact{
+        grid-template-columns: 1fr 1fr;
+    }
+    .c_info_contact .card_info_contact{
+        max-width: initial;
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1502,6 +1767,13 @@ footer {
         width: 30px;
         height: 30px;
     }
+    .c_info_contact{
+        grid-template-columns: 1fr;
+    }
+    .cont_input_x2{
+        grid-template-columns: 1fr;
+    }
+    
 }
 @media screen and (max-width: 380px) {
 }
