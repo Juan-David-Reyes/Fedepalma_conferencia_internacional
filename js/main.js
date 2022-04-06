@@ -7,6 +7,7 @@ $(document).ready(function(){
     });
 
     $('.btn_filter_agenda').click(function(){
+        $('.btn_filter_agenda span').toggleClass('fa-times');
         $('.c_agenda aside').toggleClass('subfilter_active');
     });
     
@@ -159,6 +160,26 @@ function swiperCalendar(){
     });
 }
 
+function swiperMapa(){
+
+  const swiper = new Swiper(".c_slider_mapa .mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const swiper2 = new Swiper(".c_slider_mapa .mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".c_slider_mapa .swiper-button-next",
+      prevEl: ".c_slider_mapa .swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+}
+
 
 
 
@@ -178,3 +199,4 @@ swiperPatrocinadores();
 swiperGaleriaEvento();
 swiperDocumentos();
 swiperCalendar();
+swiperMapa();
