@@ -1558,10 +1558,11 @@ footer {
     border-radius: 0 0 4px 4px;
     border: 1px solid #C7C7C7;
     .op_modulo{
-        display: flex;
+        display: grid;
+        grid-template-columns: 20px 1fr;
         align-items: center;
         width: 100%;
-        gap: 20px;
+        gap: 16px;
         margin-bottom: 12px;
         &:last-child{
             margin: 0;
