@@ -1979,6 +1979,32 @@ footer {
   gap: 20px;
 }
 
+.tit_form_c {
+  position: relative;
+}
+.tit_form_c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D1D1D1;
+  z-index: 1;
+}
+.tit_form_c h4 {
+  color: var(--c1);
+  position: relative;
+  z-index: 2;
+  padding-right: 10px;
+  background-color: #FFFFFF;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 /* ************ */
 /* RESPONSIVE */
 /* ************ */
