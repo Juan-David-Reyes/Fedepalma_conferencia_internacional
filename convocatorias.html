@@ -204,58 +204,321 @@
                             </h3>
                         </div>
                         <form action="" class="formulario_c">
-                            <div class="cont_input_x2">
-                                <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Nombre</label>
+
+                            <!-- ******************
+                            ****************** -->
+
+                            <div class="tit_form_c">
+                                <h4>PASO 1: Datos básicos</h4>
+                            </div>
+
+                            <div class="c_step_form" id="paso1">
+                                
+                                <div class="cont_input_x2">
+                                    <div class="cont_input">
+                                        <input id="form1" type="text" placeholder=" ">
+                                        <label for="form1">Nombre</label>
+                                    </div>
+                                    <div class="cont_input">
+                                        <input id="form2" type="text" placeholder=" ">
+                                        <label for="form2">Apellido</label>
+                                    </div>
+                                </div>
+                                <div class="cont_input_x2">
+                                    <div class="cont_input">
+                                        <input id="form3" type="tel" placeholder=" ">
+                                        <label for="form3">Número de teléfono</label>
+                                    </div>
+                                    <div class="cont_input">
+                                        <input id="form4" type="email" placeholder=" ">
+                                        <label for="form4">Email</label>
+                                    </div>
                                 </div>
                                 <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Apellido</label>
+                                    <input id="form5" type="text" placeholder=" ">
+                                    <label for="form5">Website * Si aplica</label>
+                                </div>
+                                
+                                <div class="cont_divider"></div>
+    
+                                <div class="cont_input_x2">
+                                    <div class="cont_input">
+                                        <select name="" id="">
+                                            <option value="" selected disabled>Tipo de identificación</option>
+                                            <option value="">C.C</option>
+                                            <option value="">C.E</option>
+                                            <option value="">T.I</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="cont_input">
+                                        <input id="form6" type="number" placeholder=" ">
+                                        <label for="form6">Número de identificacion</label>
+                                    </div>
+                                </div>
+    
+                                <div class="cont_input file">
+                                    <label for="">Fotocopia doc. identificiación</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+    
+                                <div class="cont_divider"></div>
+    
+                                <div class="cont_input radio">
+                                    <div>¿Se encuentra vacunado contra el Covid 19? *</div>
+                                    <div class="option_radio">
+                                        <input id="form7" type="radio" name="vacunado COVID19">
+                                        <label for="form7">SI</label>
+                                        <input id="form8" type="radio" name="vacunado COVID19">
+                                        <label for="form8">NO</label>
+                                    </div>
+                                </div>
+    
+                                <div class="cont_input file">
+                                    <label for="">Adjuntar el certificado de vacunación Covid 19 *</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+
+                                <div class="c_btn_steps">
+                                    <!-- <a class="btn_link" id="btn_back1"> <span class="fas fa-chevron-left"></span> Volver</a> -->
+                                    <a  class="btn_fill" id="btn_next1">Siguiente</a>
                                 </div>
                             </div>
-                            <div class="cont_input_x2">
+
+
+                            <!-- ******************
+                            ****************** -->
+
+
+
+                            <div class="tit_form_c">
+                                <h4>PASO 2: Información académica</h4>
+                            </div>
+
+                            <div class="c_step_form" id="paso2">
+
                                 <div class="cont_input">
-                                    <input type="tel" placeholder=" ">
-                                    <label for="">Celular</label>
+                                    <input id="form9" type="text" placeholder=" ">
+                                    <label for="form9">Formación</label>
                                 </div>
+
                                 <div class="cont_input">
-                                    <input type="email" placeholder=" ">
-                                    <label for="">Email</label>
+                                    <input id="form10" type="text" placeholder=" ">
+                                    <label for="form10">Institución</label>
+                                </div>
+
+                                <div class="cont_input_x2">
+                                    <div class="cont_input">
+                                        <input id="form11" type="text" placeholder=" ">
+                                        <label for="form11">Número de teléfono de la institución</label>
+                                    </div>
+                                    <div class="cont_input">
+                                        <input id="form12" type="text" placeholder=" ">
+                                        <label for="form12">País</label>
+                                    </div>
+                                </div>
+
+                                <div class="cont_input">
+                                    <input id="form13" type="text" placeholder=" ">
+                                    <label for="form13">Dirección de la empresa</label>
+                                </div>
+
+                                <div class="cont_divider"></div>
+
+                                <div class="cont_input">
+                                    <input id="form14" type="text" placeholder=" ">
+                                    <label for="form14">Título de la temática a exponer</label>
+                                </div>
+
+                                <div class="cont_input">
+                                    <input id="form15" type="text" placeholder=" ">
+                                    <label for="form15">Palabras clave de su temática</label>
+                                </div>
+
+                                <div class="cont_input file">
+                                    <label for=""> <strong> Cargar resumen:</strong>
+                                        No debe exceder 200 palabras. El título debe ser una alusión concisa del contenido Debe ser suministrado en archivos .doc, .docx, .pdf. No se reciben imágenes ni escaneados</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+
+                                <div class="c_btn_steps">
+                                    <a class="btn_link" id="btn_back1"> <span class="fas fa-chevron-left"></span> Volver</a>
+                                    <a  class="btn_fill" id="btn_next2">Siguiente</a>
+                                </div>
+
+                            </div>
+
+
+                            <!-- ******************
+                            ****************** -->
+
+                            
+                            <div class="tit_form_c">
+                                <h4>PASO 3: Módulos y sesiones</h4>
+                            </div>
+
+                            <div class="c_step_form" id="paso3">
+
+                                <div class="grand_c_radio">
+                                    
+                                    <div>Seleccione módulo y sesión</div>
+
+                                    <div class="cont_input radio_large">
+                                        <input id="form15" type="text" placeholder=" ">
+                                        <label for="form15">Módulo 1: Manejo del cultivo, biotecnología y mejoramiento de la palma de aceite</label>
+                                    </div>
+                                    <div class="c_modulo_options">
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Calidad de fruto y potencial de aceite</label>
+                                        </div>
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Aspectos de procesamiento y gerencia de plantas de beneficio</label>
+                                        </div>
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Calidad, usos del aceite</label>
+                                        </div>
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Salud y Nutrición</label>
+                                        </div>
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Usos alternos de la biomasa y manejo sostenible de plantas de beneficio</label>
+                                        </div>
+                                        <div class="op_modulo">
+                                            <input id="form15" type="text" placeholder=" ">
+                                            <label for="form15">Oportunidades de negocio en la Biomasa residual</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cont_input">
+                                    <input id="form15" type="text" placeholder=" ">
+                                    <label for="form15">Palabras clave de su temática</label>
+                                </div>
+
+                                <div class="c_btn_steps">
+                                    <a class="btn_link" id="btn_back2"> <span class="fas fa-chevron-left"></span> Volver</a>
+                                    <a  class="btn_fill" id="btn_next3">Siguiente</a>
                                 </div>
                             </div>
-                            <div class="cont_input_x2">
-                                <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Ciudad</label>
+
+
+                            <!-- ******************
+                            ****************** -->
+
+
+                            <div class="tit_form_c">
+                                <h4>PASO 4: Términos y condiciones</h4>
+                            </div>
+
+                            <div class="c_step_form" id="paso4">
+
+                                <div class="cont_input terminos">
+                                    <div class="tit_terminos">
+                                        Si su ponencia es seleccionada, debe adjuntar el artículo sobre la misma. A continuación, encontrará los requerimientos de este documento
+                                    </div>
+                                    <div class="txt_terminos">
+                                        El artículo es la versión escrita de la presentación que hará durante el evento. Será publicado en el Libro de memorias de la Conferencia.	Extensión del texto: entre 2.000 y 5.000 palabras. Debe Incluir: Titulo, Autor/es o	Palabras Clave, Referencias.	Debe ser suministrado en archivos .doc, .docx, .pdf. No pueden ser imágenes ni escaneados. Idioma: Español o inglés. Las Tablas, figuras o gráficas deben ir insertadas en el documento Word y adjuntas también en el programa original en que se trabajaron. Fotografías: Adjuntarlas fuera del documento, usar formatos JPEG / 
+                                    </div>
                                 </div>
-                                <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Website</label>
+
+                                <div class="cont_input acepto_terminos">
+                                    <div class="tit_terminos">
+                                        Si su ponencia es seleccionada, debe adjuntar el artículo sobre la misma. A continuación, encontrará los requerimientos de este documento
+                                    </div>
+                                    <div class="cont_btn_submit">
+                                        <div class="cont_btn_submit">
+                                            <label class="btn_acuerdo_ok" for="form16"><input type="checkbox" name="" id="form16">De acuerdo</label>        
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="cont_divider"></div>
+
+                                <div class="cont_input terminos">
+                                    <div class="tit_terminos">
+                                        Si su ponencia es seleccionada, debe adjuntar la presentación en formato que será suministrado previamente
+                                    </div>
+                                    <div class="txt_terminos">
+                                        La presentación son las diapositivas que se van a proyectar en la conferencia.  Debe ser suministrada en archivo .ppt, No pueden ser imágenes ni .pdf escaneados. Deben ser suministradas en el formato de la conferencia (Solicitar a su contacto). Idioma: Español o inglés.
+                                    </div>
+                                </div>
+
+                                <div class="cont_input acepto_terminos">
+                                    <div class="tit_terminos">
+                                        De ser seleccionado su ponencia, acepta que debe enviar su presentación previamente
+                                    </div>
+                                    <div class="cont_btn_submit">
+                                            <label class="btn_acuerdo_ok" for="form17"><input type="checkbox" name="" id="form17">De acuerdo</label>        
+                                    </div>
+                                </div>
+
+                                <div class="cont_divider"></div>
+
+                                <div class="c_btn_steps">
+                                    <a class="btn_link" id="btn_back3"> <span class="fas fa-chevron-left"></span> Volver</a>
+                                    <a  class="btn_fill" id="btn_next4">Siguiente</a>
                                 </div>
                             </div>
-                            <div class="cont_divider"></div>
-                            <div class="cont_input_x2">
-                                <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Formación</label>
-                                </div>
-                                <div class="cont_input">
-                                    <input type="text" placeholder=" ">
-                                    <label for="">Institución</label>
-                                </div>
+
+
+                            <!-- ******************
+                            ****************** -->
+
+
+                            <div class="tit_form_c">
+                                <h4>PASO 5: Carga de documentos</h4>
                             </div>
-                            <div class="cont_input">
-                                <textarea name="" id="" cols="30" rows="6" placeholder=" "></textarea>
-                                <label for="">Resumen temática</label>
+
+                            <div class="c_step_form" id="paso5">
+
+                                <div class="cont_input">
+                                    <div class="texto_desc_f">
+                                        Los formatos de Habeas Data y Sesión de derechos lo encontrará en <a href=""> documentos en la página web </a>
+                                    </div>
+                                </div>
+
+                                <div class="cont_input file">
+                                    <label for="">Formato de Habeas data *</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+
+                                <div class="cont_input file">
+                                    <label for="">Formato de Sesión de Derechos*</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+
+                                <div class="cont_input file">
+                                    <label for="">Hoja de Vida*</label>
+                                    <input type="file" placeholder=" ">
+                                </div>
+
+                                <div class="c_btn_steps">
+                                    <a class="btn_link" id="btn_back4"> <span class="fas fa-chevron-left"></span> Volver</a>
+                                    <button type="submit" class="btn_fill">ENVIAR FORMULARIO</button>
+                                </div>
+                               
                             </div>
-                            <div class="cont_chk">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- <div class="cont_chk">
                                 <input type="checkbox" id="chk_term">
                                 <label for="chk_term">Acepto los <a href=""> Términos y condiciones</a></label>
-                            </div>
-                            <div class="cont_btn_submit">
-                                <button type="submit" class="btn_fill">Continuar</button>
-                            </div>
+                            </div> -->
+
+
+
+
+
+                            
                         </form>
                     </div>
                 </div>

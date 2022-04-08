@@ -20,7 +20,79 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         $(this).next('.cont_cards_modulos').slideToggle();
     });
+
+
+    // FORMULARIO INTERNA CONVOCATORIAS
+
+    const pasos = document.querySelectorAll('.c_step_form');
+    
+    const btnNextPaso1 = document.getElementById('btn_next1');
+    const btnNextPaso2 = document.getElementById('btn_next2');
+    const btnNextPaso3 = document.getElementById('btn_next3');
+    const btnNextPaso4 = document.getElementById('btn_next4');
+
+    const btnBackPaso2 = document.getElementById('btn_back1');
+    const btnBackPaso3 = document.getElementById('btn_back2');
+    const btnBackPaso4 = document.getElementById('btn_back3');
+    const btnBackPaso5 = document.getElementById('btn_back4');
+
+    const containerPaso1 = document.getElementById('paso1');
+    const containerPaso2 = document.getElementById('paso2');
+    const containerPaso3 = document.getElementById('paso3');
+    const containerPaso4 = document.getElementById('paso4');
+    const containerPaso5 = document.getElementById('paso5');
+
+
+    $(btnNextPaso1).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso2).slideDown()
+    });
+
+    // -----
+
+    $(btnNextPaso2).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso3).slideDown()
+    });
+
+    $(btnBackPaso2).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso1).slideDown()
+    });
+
+    // -----
+
+    $(btnNextPaso3).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso4).slideDown()
+    });
+
+    $(btnBackPaso3).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso2).slideDown()
+    });
+
+    // -----
+
+    $(btnNextPaso4).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso5).slideDown()
+    });
+
+    $(btnBackPaso4).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso3).slideDown()
+    });
+
+    // -----
+
+    $(btnBackPaso5).click(function(){
+      $(pasos).slideUp()
+      $(containerPaso4).slideDown()
+    });
+
 });
+
 
 function sliderHero(){
     const swiper = new Swiper(".cont_gen_hero .sliderHero", {
