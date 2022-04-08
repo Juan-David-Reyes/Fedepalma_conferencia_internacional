@@ -22,6 +22,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding: 0 20px;
   box-sizing: border-box;
@@ -312,7 +316,7 @@ footer {
 .cont_gen_footer {
   display: grid;
   grid-template-columns: 170px 2fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: flex-start;
   justify-content: center;
 }
@@ -1652,6 +1656,7 @@ footer {
 .texto_desc_f a {
   color: #5C5C5C;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cont_chk {
