@@ -91,6 +91,20 @@ $(document).ready(function(){
       $(containerPaso4).slideDown()
     });
 
+    // MODULOS RADIO BUTTONS
+
+    const opcionesModulos = document.querySelectorAll('.c_modulo_options');
+
+    $('.cont_input.radio_large').click(function(e){
+      $(opcionesModulos).slideUp();
+      $(this).next('.c_modulo_options').slideToggle();
+      $(this).find('input').prop("checked",true);
+      return false;
+    });
+    
+    
+
+
 });
 
 
