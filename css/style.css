@@ -2408,6 +2408,7 @@ footer {
 
   .cont_input_x2 {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .c_slider_mapa {
