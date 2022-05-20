@@ -1025,6 +1025,11 @@ footer {
         background: linear-gradient(90deg, #F4F4F4 50%, rgba(255, 255, 255, 0) 81.77%);
         z-index: 1;
     }
+    &.modHeader_color{
+        &::before{
+            background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 81.77%);
+        }
+    }
     picture{
         display: inline-block;
         position: absolute;
@@ -1980,6 +1985,481 @@ footer {
     }
 }
 
+/* INTERNA DE LOGISTICA */
+
+.reverse_bg{
+    background: url('../images/diseno/1-home/bg_sections-reverse.png') no-repeat center top;
+    background-size: cover;
+}
+
+.ajustebg{
+    background-position: center bottom;
+}
+
+.s_logistica{
+    margin: 0 0 60px;
+}
+
+.c_slider_pri_logistica{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100vh;
+    max-height: 390px;
+    align-items: center;
+}
+.desc_stiky{
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(0deg, rgb(255 255 255 / 22%), rgb(255 255 255 / 25%));
+    background-blend-mode: multiply, normal;
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 281px;
+    height: 100%;
+    .fas{
+        font-size: 20px;
+        margin-right: 10px;
+        color: var(--txt-light);
+    }
+    h2{
+        margin: 10px 0 20px;
+        padding: 0 0 20px;
+        text-transform: uppercase;
+        color: var(--txt-light);
+        position: relative;
+        &::before{
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            width: 100px;
+            background-color: var(--bg-color-light);
+            position: absolute;
+            border-radius: 100px;
+        }
+    }
+    h5{
+        margin: 0 0 10px;
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--txt-light);
+    }
+    .cont_fecha{
+        color: var(--txt-light);
+        padding: 8px 12px;
+        box-sizing: border-box;
+        background-color: var(--c2);
+        border-radius: 4px;
+        margin: 0 0 30px;
+        font-weight: 700;
+        width: max-content;
+        font-size: 18px;
+    }
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background-color: var(--bg-color-light);
+    }
+    .swiper-pagination-bullet-active{
+        background-color: var(--color-btn);
+    }
+
+}
+.swiperPriLogistica{
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    &::before{
+        content: '';
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #3a3a3abf 0%, #d9d9d900 62.86%);
+        mix-blend-mode: multiply;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+
+.swiperComoLlegar{
+    padding: 0 0 20px;
+    .swiper-slide{
+        flex-direction: column;
+        gap: 20px;
+        background-color: transparent;
+        .pri_swipe_cont{
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: var(--bg-color-light);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            box-shadow: 0px 0px 27px -21px #00000040;
+            transition: 300ms ease;
+            background-color: #FFF!important;
+            picture{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    max-height: 40px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &:hover{
+                box-shadow: 0px 18px 27px -21px #00000040;
+            }
+        }
+    }
+    .txt_comoLlegar{
+        line-height: 1.8;
+        color: #828282;
+        font-size: 15px;
+        margin: 0 0 20px;
+    }
+}
+
+.cont_cta_logistica{
+    position: relative;
+    width: 100%;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #E9E9E9;
+        left: 0;
+        right: 0;
+        top: calc(50%);
+        margin: 0 auto;
+        z-index: 1;
+    }
+    a{
+        position: relative;
+        text-decoration: none;
+        color: #858585;
+        background-color: #ECECEC;
+        padding: 6px 16px;
+        border-radius: 100px;
+        box-sizing: border-box;
+        z-index: 2;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap:8px;
+        justify-content: center;
+        width: max-content;
+        margin: 0 auto;
+        cursor: pointer;
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &.active{
+            background-color: var(--color-btn);
+            color: var(--txt-light);
+        }
+    }
+}
+
+.datos_contacto_l_card{
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: var(--bg-color-light);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    picture{
+        width: 70px;
+        display: inline-block;
+        height: 70px;
+        border-radius: 100px;
+        background-color: red;
+        overflow: hidden;
+        min-width: 70px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .dcl{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+    }
+    h4{
+        margin: 0;
+        text-align: left;
+    }
+    a{
+        text-align: left;
+        color: var(--txt-dark);
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &.active{
+        display: flex!important;
+    }
+}
+
+.s_como_llegar_logistica{
+    padding: 0 0 40px;
+}
+
+
+.c_donde_llegar_logistica{
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    .swiper-button-next, .swiper-button-prev{
+        top: 240px;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: 0;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: 0px;
+    }
+}
+.swiperDondeLlegar{
+    .swiper-slide{
+        flex-direction: column;
+        gap: 20px;
+        background-color: transparent;
+        .pri_swipe_cont{
+            background-color: #FFF;
+            border-radius: 8px;
+            padding: 0 0 20px;
+        }
+    }
+    picture{
+        max-height: 178px;
+        position: relative;
+        display: flex;
+        img{
+            max-height: 178px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nombre_hotel{
+            position: absolute;
+            bottom: -16px;
+            background-color: var(--color-btn);
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: max-content;
+            color: var(--txt-light);
+            font-size: 15px;
+            z-index: 1;
+            top: initial;
+        }
+    }
+}
+
+.descripcion_h{
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+}
+.cont_web{
+    a{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        color: var(--txt-dark);
+        text-decoration: none;
+        margin: 16px 0;
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            max-width: 20px;
+            display: inline-block;
+        }
+    }
+}
+.distancia_h{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    color: var(--c1);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    span{
+        color: var(--c1);
+        font-size: 20px;
+    }
+
+}
+
+.c_precios2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    background: var(--c2);
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0 20px;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 50%;
+        width: 1px;
+        background-color: #3C6423;
+        inset: 0;
+        margin: auto;
+    }
+    .precio_h{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 0px;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--txt-light);
+        span{
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+
+}
+
+
+.s_que_hacer_logistica{
+    padding: 60px 0 100px;
+}
+.c_que_hacer_logistica, .c_como_llegar_logistica{
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.swiperQueHacer{
+    .swiper-slide{
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        min-height: 380px;
+        border-radius: 18px;
+        overflow: hidden;
+        &:hover{
+            picture{
+                img{
+                    width: 108%;
+                    height: 108%;
+                }
+            }
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf);
+            mix-blend-mode: multiply;
+            z-index: 2;
+        }
+        picture{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            img{
+                transition: 300ms ease;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .tit_quehacer, .cta_quehacer{
+            position: relative;
+            z-index: 2;
+        }
+        .tit_quehacer{
+            color: var(--txt-light);
+            text-transform: uppercase;
+            width: 100%;
+            text-align: left;
+            font-size: 32px;
+            padding: 10px 20px 0;
+            box-sizing: border-box;
+            margin: 0;
+            text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.46);
+            line-height: 1;
+            span{
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .cta_quehacer{
+            color: #FFF;
+            width: 100%;
+            position: relative;
+            padding: 0 0 10px;
+            font-size: 16px;
+            &:hover{
+                text-decoration: underline;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                left: calc(50% - 200px);
+                margin: 0 auto;
+                top: -20px;
+                width: 400px;
+                height: 180px;
+                border-radius: 100%;
+                background-color: var(--color-btn);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 
 /* ************ */
@@ -2364,6 +2844,14 @@ footer {
     }
     .cont_gen_agenda .tit_section{
         gap: 12px;
+    }
+    .c_slider_pri_logistica{
+        grid-template-columns: 1fr;
+        max-height: 540px;
+        padding: 14px;
+    }
+    .desc_stiky .cont_fecha{
+        width: 100%;
     }
 }
 @media screen and (max-width: 380px) {

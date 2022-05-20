@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+
+    function logistica(){
+      if($('.s_logistica').is(':visible')){
+        $('main').css('background-color', '#F4F4F4');
+        $('.s_header_int').addClass('modHeader_color');
+      }
+    }
+
+    logistica();
+
     $('.bars_menu').click(function(){
         $('.navbar_desk ul').toggleClass('active_nav_m');
     });
@@ -268,8 +279,6 @@ function swiperMapa(){
 
 
 
-
-
 const agendaDia = document.querySelectorAll('.dia_aside');
 const agendaAuditorio = document.querySelectorAll('.auditorias_aside');
 
@@ -280,9 +289,164 @@ $(agendaDia).click(function(){
     $(this).find('.auditorias_aside').slideToggle();
 });
 
+
+/* SLIDERS INTERNA LOGISTICA */
+
+
+
+function sliderPriLogistica(){
+  
+  let swiper = new Swiper(".c_slider_pri_logistica .swiperPriLogistica", {
+    pagination: {
+      el: ".c_slider_pri_logistica .swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 8000,
+    },
+    spaceBetween: 0,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+  });
+
+}
+
+function sliderComoLlegar(){
+  
+  let swiper = new Swiper(".swiperComoLlegar", {
+    navigation: {
+      nextEl: ".c_como_llegar_logistica .swiper-button-next",
+      prevEl: ".c_como_llegar_logistica .swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+      // when window width is >= 320px
+
+      480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 640px
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    }
+  });
+
+}
+
+function sliderDondeLlegar(){
+  
+  let swiper = new Swiper(".swiperDondeLlegar", {
+    navigation: {
+      nextEl: ".c_donde_llegar_logistica .swiper-button-next",
+      prevEl: ".c_donde_llegar_logistica .swiper-button-prev",
+    },
+    spaceBetween: 10,
+    slidesPerView: 1,
+    breakpoints: {
+      // when window width is >= 320px
+
+      480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 640px
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    }
+  });
+
+}
+
+function sliderQueHacer(){
+  
+  let swiper = new Swiper(".swiperQueHacer", {
+    navigation: {
+      nextEl: ".c_que_hacer_logistica .swiper-button-next",
+      prevEl: ".c_que_hacer_logistica .swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+      // when window width is >= 320px
+
+      480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 640px
+      980: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
+  });
+
+}
+
+function ctaLogistica(){
+
+  const cta = document.querySelectorAll('.cont_cta_logistica a');
+  const contDatosContacto = document.querySelectorAll('.datos_contacto_l_card');
+
+  $(cta).click(function(){
+    if($(this).parent().parent().next(contDatosContacto).is(':visible')){
+      $(contDatosContacto).slideUp()
+    }else{
+      $(contDatosContacto).slideUp()
+      $(this).parent().parent().next(contDatosContacto).slideToggle()
+    }
+  })
+}
+
+
+/* $(window).scroll(function(){
+  const contDatosContacto = document.querySelectorAll('.datos_contacto_l_card');
+  if($(contDatosContacto).is(':visible')){
+    $(contDatosContacto).slideUp()
+  }
+}) */
+
+
+
 sliderHero();
 swiperPatrocinadores();
 swiperGaleriaEvento();
 swiperDocumentos();
 swiperCalendar();
 swiperMapa();
+
+/* SLIDERS INTERNA LOGISTICA */
+
+ctaLogistica();
+sliderPriLogistica();
+sliderComoLlegar();
+sliderDondeLlegar();
+sliderQueHacer();
