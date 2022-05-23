@@ -1109,11 +1109,24 @@ footer {
   text-align: center;
 }
 .div_cols_bene .d_col ul {
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0;
 }
 .div_cols_bene .d_col ul li {
   margin-bottom: 20px;
+  position: relative;
+  list-style: none;
+}
+.div_cols_bene .d_col ul li::before {
+  content: "";
+  background: url("../images/diseno/arrow.svg") no-repeat center;
+  background-size: contain;
+  left: -20px;
+  top: 2px;
+  border-radius: 100px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
 }
 
 .c_banner_inscripcion {
