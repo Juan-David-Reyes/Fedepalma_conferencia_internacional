@@ -418,10 +418,13 @@ function ctaLogistica(){
 
   $(cta).click(function(){
     if($(this).parent().parent().next(contDatosContacto).is(':visible')){
-      $(contDatosContacto).slideUp()
+      $(contDatosContacto).slideUp();
+      $(cta).removeClass('active');
     }else{
+      $(cta).removeClass('active');
       $(contDatosContacto).slideUp()
       $(this).parent().parent().next(contDatosContacto).slideToggle()
+      $(this).toggleClass('active');
     }
   })
 }

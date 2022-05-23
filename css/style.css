@@ -2193,16 +2193,24 @@ footer {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
+  transition: 300ms ease;
   cursor: pointer;
+}
+.cont_cta_logistica a:hover {
+  background-color: #d0d0d0;
 }
 .cont_cta_logistica a span {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 300ms ease-out;
 }
 .cont_cta_logistica a.active {
   background-color: var(--color-btn);
   color: var(--txt-light);
+}
+.cont_cta_logistica a.active span {
+  transform: rotate(180deg);
 }
 
 .datos_contacto_l_card {
@@ -2338,24 +2346,30 @@ footer {
   display: flex;
   align-items: center;
   text-align: left;
-  gap: 20px;
+  gap: 10px;
   color: var(--c1);
   font-size: 15px;
   font-weight: 700;
-  margin: 0 0 20px;
+  margin: 0 0 20px 10px;
 }
 .distancia_h span {
   color: var(--c1);
   font-size: 20px;
 }
 
-.c_precios2 {
+.solo_precios {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  align-items: center;
+}
+
+.c_precios2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   align-items: flex-start;
   background: var(--c2);
-  border-radius: 6px;
+  border-radius: 14px;
   padding: 10px;
   box-sizing: border-box;
   position: relative;
@@ -2364,10 +2378,12 @@ footer {
 .c_precios2::before {
   content: "";
   position: absolute;
-  height: 50%;
+  height: 30%;
+  top: 10px;
   width: 1px;
   background-color: #3C6423;
-  inset: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 .c_precios2 .precio_h {
@@ -2383,6 +2399,11 @@ footer {
 .c_precios2 .precio_h span {
   font-weight: 400;
   font-size: 15px;
+}
+
+.tit_x_noche {
+  font-size: 15px;
+  color: var(--txt-light);
 }
 
 .s_que_hacer_logistica {
@@ -2402,19 +2423,7 @@ footer {
   min-height: 380px;
   border-radius: 18px;
   overflow: hidden;
-}
-.swiperQueHacer .swiper-slide:hover picture img {
-  width: 108%;
-  height: 108%;
-}
-.swiperQueHacer .swiper-slide::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4705882353) 0%, rgba(0, 0, 0, 0) 38.16%), linear-gradient(0deg, rgba(188, 188, 188, 0), rgba(188, 188, 188, 0.7490196078));
-  mix-blend-mode: multiply;
-  z-index: 2;
+  transition: 300ms ease;
 }
 .swiperQueHacer .swiper-slide picture {
   display: flex;
@@ -2455,14 +2464,30 @@ footer {
   font-size: 16px;
   font-weight: 400;
 }
+.swiperQueHacer .swiper-slide summary {
+  position: relative;
+  z-index: 3;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: var(--txt-light);
+  opacity: 0;
+  font-weight: 300;
+  transition: 300ms ease;
+}
 .swiperQueHacer .swiper-slide .cta_quehacer {
   color: #FFF;
   width: 100%;
   position: relative;
   padding: 0 0 10px;
   font-size: 16px;
+  margin: 0 0 -50px;
+  transition: 300ms ease;
 }
-.swiperQueHacer .swiper-slide .cta_quehacer:hover {
+.swiperQueHacer .swiper-slide .cta_quehacer a {
+  cursor: pointer;
+}
+.swiperQueHacer .swiper-slide .cta_quehacer a:hover {
   text-decoration: underline;
 }
 .swiperQueHacer .swiper-slide .cta_quehacer::before {
@@ -2476,6 +2501,31 @@ footer {
   border-radius: 100%;
   background-color: var(--color-btn);
   z-index: -1;
+}
+.swiperQueHacer .swiper-slide::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4588235294) 38.16%), linear-gradient(0deg, rgba(188, 188, 188, 0.9294117647), rgba(68, 68, 68, 0.5294117647));
+  /* background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf); */
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  z-index: 2;
+  transition: 300ms ease;
+}
+.swiperQueHacer .swiper-slide:hover picture img {
+  width: 108%;
+  height: 108%;
+}
+.swiperQueHacer .swiper-slide:hover .cta_quehacer {
+  margin: 0;
+}
+.swiperQueHacer .swiper-slide:hover summary {
+  opacity: 1;
+}
+.swiperQueHacer .swiper-slide:hover::before {
+  opacity: 1;
 }
 
 /* ************ */
@@ -2883,6 +2933,10 @@ footer {
 
   .c_reserva_stand h2 {
     font-size: 32PX;
+  }
+
+  .datos_contacto_l_card {
+    max-width: 380px;
   }
 }
 @media screen and (max-width: 480px) {

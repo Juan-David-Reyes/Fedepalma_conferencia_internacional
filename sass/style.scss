@@ -2166,15 +2166,23 @@ footer {
         justify-content: center;
         width: max-content;
         margin: 0 auto;
+        transition: 300ms ease;
         cursor: pointer;
+        &:hover{
+            background-color: #d0d0d0;
+        }
         span{
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: 300ms ease-out;
         }
         &.active{
             background-color: var(--color-btn);
             color: var(--txt-light);
+            span{
+                transform: rotate(180deg);
+            }
         }
     }
 }
@@ -2310,25 +2318,29 @@ footer {
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 20px;
+    gap: 10px;
     color: var(--c1);
     font-size: 15px;
     font-weight: 700;
-    margin: 0 0 20px;
+    margin: 0 0 20px 10px;
     span{
         color: var(--c1);
         font-size: 20px;
     }
 
 }
-
-.c_precios2{
+.solo_precios{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    align-items: center;
+}
+.c_precios2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     align-items: flex-start;
     background: var(--c2);
-    border-radius: 6px;
+    border-radius: 14px;
     padding: 10px;
     box-sizing: border-box;
     position: relative;
@@ -2336,10 +2348,12 @@ footer {
     &::before{
         content: '';
         position: absolute;
-        height: 50%;
+        height: 30%;
+        top: 10px;
         width: 1px;
         background-color: #3C6423;
-        inset: 0;
+        left: 0;
+        right: 0;
         margin: auto;
     }
     .precio_h{
@@ -2358,7 +2372,10 @@ footer {
     }
 
 }
-
+.tit_x_noche{
+    font-size: 15px;
+    color: var(--txt-light);
+}
 
 .s_que_hacer_logistica{
     padding: 60px 0 100px;
@@ -2376,23 +2393,7 @@ footer {
         min-height: 380px;
         border-radius: 18px;
         overflow: hidden;
-        &:hover{
-            picture{
-                img{
-                    width: 108%;
-                    height: 108%;
-                }
-            }
-        }
-        &::before{
-            content: '';
-            width: 100%;
-            height: 100%;
-            position:absolute;
-            background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf);
-            mix-blend-mode: multiply;
-            z-index: 2;
-        }
+        transition: 300ms ease;
         picture{
             display: flex;
             align-items: center;
@@ -2430,14 +2431,30 @@ footer {
                 font-weight: 400;
             }
         }
+        summary{
+            position: relative;
+            z-index: 3;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: var(--txt-light);
+            opacity: 0;
+            font-weight: 300;
+            transition: 300ms ease;
+        }
         .cta_quehacer{
             color: #FFF;
             width: 100%;
             position: relative;
             padding: 0 0 10px;
             font-size: 16px;
-            &:hover{
-                text-decoration: underline;
+            margin: 0 0 -50px;
+            transition: 300ms ease;
+            a{
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
             &::before{
                 content: '';
@@ -2450,6 +2467,35 @@ footer {
                 border-radius: 100%;
                 background-color: var(--color-btn);
                 z-index: -1;
+            }
+        }
+        &::before{
+            content: '';
+            background: linear-gradient(180deg, #00000099 0%, #00000075 38.16%), linear-gradient(0deg, #bcbcbced, #44444487);
+            /* background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf); */
+            opacity: .2;
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            mix-blend-mode: multiply;
+            z-index: 2;
+            transition: 300ms ease;
+        }
+        &:hover{
+            picture{
+                img{
+                    width: 108%;
+                    height: 108%;
+                }
+            }
+            .cta_quehacer{
+                margin: 0;
+            }
+            summary{
+                opacity: 1;
+            }
+            &::before{
+                opacity: 1;
             }
         }
     }
@@ -2786,6 +2832,9 @@ footer {
     }
     .c_reserva_stand h2{
         font-size: 32PX;
+    }
+    .datos_contacto_l_card{
+        max-width: 380px;
     }
 }
 @media screen and (max-width: 480px) {
