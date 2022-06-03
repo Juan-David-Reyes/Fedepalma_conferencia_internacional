@@ -3041,6 +3041,10 @@ footer {
   color: var(--c3);
 }
 
+.s_filtro {
+  padding: 40px 0 0;
+}
+
 .s_cont1_expo, .s_banner_inscripcion, .s_filtro, .s_cards_marcas, .s_paginador {
   background-color: #F2F2F2;
 }
@@ -3065,6 +3069,8 @@ footer {
   box-sizing: border-box;
   font-size: 14px;
   color: #767676;
+  background: transparent;
+  height: 37px;
 }
 .cont_filtro input::-moz-placeholder, .cont_filtro select::-moz-placeholder {
   font-size: 14px;
@@ -3081,6 +3087,17 @@ footer {
 
 .btn_fill.search {
   border-radius: 6px;
+}
+
+.int_agenda {
+  background: #F2F2F2;
+}
+.int_agenda .cont_gen_agenda {
+  padding: 0 0 40px;
+}
+.int_agenda .col_gen_modulos {
+  overflow-y: initial;
+  max-height: initial;
 }
 
 /* ************ */
