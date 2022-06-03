@@ -25,9 +25,7 @@
 html {
   scroll-behavior: smooth;
 }
-p{
-  line-height: 1.3;
-}
+
 .center {
   padding: 0 20px;
   box-sizing: border-box;
@@ -84,15 +82,9 @@ header .header .navbar_desk .cont_btn_menu_mobile {
   padding-right: 10px;
   box-sizing: border-box;
 }
-header .header .navbar_desk .cont_btn_menu_mobile a{
+header .header .navbar_desk .cont_btn_menu_mobile a {
   cursor: pointer;
   color: var(--txt-btn-c2);
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-header .header .navbar_desk .cont_btn_menu_mobile a span {
   font-size: 26px;
 }
 header .header .navbar_desk ul {
@@ -438,7 +430,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 0%), linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 30%, rgba(255, 255, 255, 0) 80.31%);
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 50%, rgba(255, 255, 255, 0) 80.31%);
 }
 .sliderHero .swiper-slide .img_bg_slider_hero img {
   width: 100%;
@@ -512,7 +504,7 @@ footer {
   width: 80%;
 }
 .swiperPatrocinadores .swiper-slide picture img {
-  width: 90%;
+  width: 70%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -536,7 +528,6 @@ footer {
   color: var(--c2);
   font-size: 40px;
   margin: 30px 0 50px;
-  text-align: center;
 }
 .tit_section h3 img {
   margin-right: 10px;
@@ -550,8 +541,7 @@ footer {
 
 .cont_gen_banner_visitas {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
@@ -566,13 +556,11 @@ footer {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: center;
 }
 .cont_visitas_banner span {
   font-weight: 800;
   color: var(--txt-light);
   font-size: 60px;
-  justify-content: center;
 }
 .cont_visitas_banner .cont_txt_visitas {
   display: flex;
@@ -675,9 +663,7 @@ footer {
 .s_incitacion_evento .tit_section h3 {
   margin-top: 30px;
 }
-.s_incitacion_evento .tit_section h3 p{
-  margin: 0;
-}
+
 .s_incitacion_evento {
   padding: 20px 0 100px;
 }
@@ -727,7 +713,7 @@ footer {
   color: var(--txt-light);
   gap: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4078431373);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .cont_gen_agenda .tit_section h3 {
   color: var(--txt-light);
@@ -737,14 +723,7 @@ footer {
   letter-spacing: 0.335em;
   text-transform: uppercase;
   font-size: 20px;
-  display: none;
 }
-.cont_gen_agenda .tit_section .tit_agenda_fecha.mobl{
-  display: none;
-}
-.cont_gen_agenda .tit_section .tit_agenda_fecha.mobl p{
-  margin: 0;
-} 
 
 .c_agenda {
   display: grid;
@@ -807,7 +786,7 @@ footer {
   width: 100%;
   padding: 4px;
   box-sizing: border-box;
-  margin: 14px 0;
+  margin: 4px 0;
   cursor: pointer;
 }
 
@@ -1013,9 +992,9 @@ footer {
   align-items: center;
 }
 .c_gracias picture {
-  max-width: 350px;
+  max-width: 400px;
   display: block;
-  margin: 0 auto 30px;
+  margin: auto;
 }
 .c_gracias picture img {
   width: 100%;
@@ -1055,6 +1034,9 @@ footer {
   height: 100%;
   background: linear-gradient(90deg, #F4F4F4 50%, rgba(255, 255, 255, 0) 81.77%);
   z-index: 1;
+}
+.s_header_int.modHeader_color::before {
+  background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 81.77%);
 }
 .s_header_int picture {
   display: inline-block;
@@ -1127,7 +1109,7 @@ footer {
   text-align: center;
 }
 .div_cols_bene .d_col ul {
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0;
 }
 .div_cols_bene .d_col ul li {
@@ -1240,7 +1222,7 @@ footer {
 
 .c_info_contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   justify-items: center;
 }
@@ -1254,10 +1236,9 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 365px;
+  max-width: 253px;
   min-height: 258px;
   overflow: hidden;
-  width: 100%;
 }
 .c_info_contact .card_info_contact:hover picture {
   opacity: 1;
@@ -1316,7 +1297,6 @@ footer {
   z-index: 5;
   width: 100%;
   gap: 8px;
-  word-break: break-all;
 }
 .c_info_contact .card_info_contact .datos_info a {
   text-decoration: none;
@@ -1605,9 +1585,7 @@ footer {
   font-size: 13px;
   padding-top: 3px;
 }
-.cont_input .formError{
-  left: 0!important;
-}
+
 .c_modulo_options {
   display: none;
   padding: 20px;
@@ -1663,7 +1641,7 @@ footer {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   box-sizing: border-box;
 }
 .c_btn_steps .btn_fill {
@@ -1795,11 +1773,10 @@ footer {
   font-size: 32px;
   margin: 0 20px 20px;
 }
-.calendar_x1 div p, .calendar_x2 div p{
+.calendar_x1 div, .calendar_x2 div {
   text-align: center;
   color: var(--txt-light);
   font-size: 15px;
-  margin: 0;
 }
 
 .calendar_x2 {
@@ -1848,11 +1825,24 @@ footer {
   overflow: hidden;
   transition: 300ms ease;
 }
+.swiperCalendar .swiper-slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(124, 167, 50, 0.8), rgba(124, 167, 50, 0.8)), linear-gradient(0deg, #7CA732, #7CA732), url("../images/diseno/05-convocatorias_conf/mic_bg.png");
+  background-blend-mode: normal, color, normal;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 300ms ease;
+}
 .swiperCalendar .swiper-slide:hover {
   background-color: var(--c3);
 }
-.swiperCalendar .swiper-slide:hover picture {
-  opacity: 0.2;
+.swiperCalendar .swiper-slide:hover::before {
+  opacity: 1;
 }
 .swiperCalendar .swiper-slide > div:last-child:not(.calendar_x1) {
   color: var(--txt-light);
@@ -1866,26 +1856,10 @@ footer {
   box-sizing: border-box;
   position: relative;
 }
-.c_calendar_slider picture{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(124, 167, 50, 0.8), rgba(124, 167, 50, 0.8)), linear-gradient(0deg, #7CA732, #7CA732), url("../images/diseno/05-convocatorias_conf/mic_bg.png");
-  background-blend-mode: normal, color, normal;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: 300ms ease;
-}
 
 .sub_txt_x2 {
   position: relative;
   z-index: 5;
-}
-.sub_txt_x2 p{
-  margin: 0;
-  font-size: 16px;
 }
 
 .s_reserva_stand {
@@ -2021,98 +1995,33 @@ footer {
   gap: 20px;
 }
 
-.swiperDocumentos .btn_outline{
-  min-height: 56px;
-  display: flex;
-  align-items: center;
+.tit_form_c {
+  position: relative;
 }
-.inicio_mbl{
-  display: none;
-}
-.dia_aside{
+.tit_form_c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
   width: 100%;
-  display: block;
+  height: 1px;
+  background-color: #D1D1D1;
+  z-index: 1;
 }
-.tit_mobile_auditorio{
-  display: none;
-  color: var(--txt-light);
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-.banner_publicidad picture, .c_banner_publicidad{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.banner_publicidad picture label, .c_banner_publicidad label{
-  margin: 0 auto 6px;
-  display: inline-block;
-  font-size: 14px;
-  color: #a2a2a2;
-  text-align: center;
-}
-.c_banner_publicidad label{
-  margin: 6px auto;
-}
-.banner_publicidad picture img, .c_banner_publicidad img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.c_banner_publicidad img{
-  max-width: 1024px;
-  max-height: 120px;
-  margin: 0 auto;
-}
-.formfile{
-  visibility: hidden;
-  height: 0!important;
-}
-.cta_txt_file label{
-  display:inline-block;
-}
-.cta_txt_file{
-  padding: 0 10px 10px;
-  box-sizing: border-box;
-  display:flex;
-  justify-content:space-between;
-}
-.txt_file_chosen{
-  width:100%;
-  text-align:center;
-  font-size:12px!important;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-  text-align: left;
-}
-.btn_fill_label{
-  width: 100%;
-  max-width: 182px;
-  content: 'Select files';
-  background-color: var(--color-btn)!important;
-  color: var(--txt-btn-c2)!important;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px 24px!important;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex!important;
-  aligb-items:center;
-  font-size: 14px!important;
-  text-align: center;
-  outline: 0;
-  cursor: pointer!important;
-  height:35px;
-  justify-content:center;
-  margin:0!important;
+.tit_form_c h4 {
+  color: var(--c1);
+  position: relative;
+  z-index: 2;
+  padding-right: 10px;
+  background-color: #FFFFFF;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* INTERNA DE LOGISTICA */
-
 .reverse_bg {
   background: url("../images/diseno/1-home/bg_sections-reverse.png") no-repeat center top;
   background-size: cover;
@@ -2318,7 +2227,7 @@ footer {
 }
 
 .datos_contacto_l_card {
-  padding: 10px;
+  padding: 10px 30px;
   box-sizing: border-box;
   background-color: var(--bg-color-light);
   width: 100%;
@@ -2347,7 +2256,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  width: 70%;
+  width: 100%;
 }
 .datos_contacto_l_card h4 {
   margin: 0;
@@ -2357,9 +2266,6 @@ footer {
   text-align: left;
   color: var(--txt-dark);
   text-decoration: none;
-  font-size: 15px;
-  word-wrap: break-word;
-  width: 100%;
 }
 .datos_contacto_l_card a:hover {
   text-decoration: underline;
@@ -2419,11 +2325,11 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: var(--txt-light);
-  font-size: 13px;
+  font-size: 15px;
   z-index: 1;
   top: initial;
 }
@@ -2612,6 +2518,7 @@ footer {
 .swiperQueHacer .swiper-slide::before {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4588235294) 38.16%), linear-gradient(0deg, rgba(188, 188, 188, 0.9294117647), rgba(68, 68, 68, 0.5294117647));
+  /* background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf); */
   opacity: 0.2;
   width: 100%;
   height: 100%;
@@ -2632,10 +2539,6 @@ footer {
 }
 .swiperQueHacer .swiper-slide:hover::before {
   opacity: 1;
-}
-
-.s_donde_llegar_logistica, .s_que_hacer_logistica{
-  background-color: #f5f5f5;
 }
 
 /* ************ */
@@ -2951,7 +2854,6 @@ footer {
 
   .c_agenda {
     grid-template-columns: 1fr;
-    min-height: 310px;
   }
 
   .col_agenda_info {
@@ -3048,18 +2950,7 @@ footer {
   .c_reserva_stand h2 {
     font-size: 32PX;
   }
-  .cont_gen_agenda .tit_section .tit_agenda_fecha{
-    display: none;
-  }
-  .cont_gen_agenda .tit_section .tit_agenda_fecha.mobl{
-    display: inline-flex;
-  }
-  .tit_mobile_auditorio{
-    display: inline-flex;
-  }
-  .cont_gen_agenda .tit_section h3 {
-    margin: 0;
-  }
+
   .datos_contacto_l_card {
     max-width: 380px;
   }
@@ -3138,6 +3029,7 @@ footer {
   .cont_gen_agenda .tit_section {
     gap: 12px;
   }
+
   .c_slider_pri_logistica {
     grid-template-columns: 1fr;
     max-height: 540px;
