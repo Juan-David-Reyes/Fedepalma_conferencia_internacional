@@ -2655,7 +2655,7 @@ footer {
 /* ESTILOS INTERNA EXPOSITORES */
 
 .c_cont1_expo{
-    margin: 40px 0;
+    padding: 40px 0;
 }
 
 .txt_desc_section{
@@ -2663,14 +2663,158 @@ footer {
     margin: 0 auto;
 }
 
+.c_paginador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 60px 0;
+    a{
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+    }
+    .pagearrow{
+        color: #FFF;
+        background-color: var(--c4);
+    }
+    .page{
+        color: #555555;
+        background-color: #D9D9D9;
+        font-size: 18px;
+        transition: 300ms ease;
+        &:hover{
+            background-color: #cdcdcd;
+        }
+
+        &.active{
+            background-color: var(--color-btn);
+            color: var(--txt-light);
+        }
+    }
+}
+
+.c_cards_marcas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+    .card_marca{
+        background: #FFFFFF;
+        border-radius: 12px;
+        padding: 20px 20px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        h5, h4{
+            margin: 0;
+            color: var(--c2);
+        }
+        h5{
+          font-weight: 400; 
+        }
+        h4{
+            font-size: 20px;
+            margin: 0 0 20px;
+        }
+        picture{
+            width: 100%;
+            background: #F4F4F4;
+            border: 1px solid #EDEDED;
+            border-radius: 8px;
+            max-height: 120px;
+            display: inline-block;
+            img{
+                mix-blend-mode: multiply;
+                max-height: 120px;
+               /*  width: 100%; */
+                height: 100%;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+            }
+        }
+        .datos_marca{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            a{
+                text-decoration: none;
+                color: #282828;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .social_marca{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-top: 1px solid #d4d4d4;
+            padding: 10px 0 0;
+            a{
+                width: 30px;
+                display: inline-block;
+                height: 30px;
+                font-size: 20px;
+                border-radius: 100px;
+                color: #BEBEBE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: 300ms ease;
+                &:hover{
+                    color: var(--c3);
+                }
+            }
+        }
+    }
+}
 
 
+.s_cont1_expo, .s_banner_inscripcion, .s_filtro, .s_cards_marcas, .s_paginador{
+    background-color: #F2F2F2;
+}
 
+.c_filtro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 30px;
+    flex-wrap: wrap;
+}
+.cont_filtro{
+    input, select{
+        width: 100%;
+        min-width: 240px;
+        max-width: 300px;
+        border-radius: 6px;
+        outline: 0;
+        border: 1px solid #d4d4d4;
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #767676;
+        &::placeholder{
+            font-size: 14px;
+        opacity: .5;        }
+    }
+}
 
-
-
-
-
+.btn_fill.search{
+    border-radius: 6px;
+}
 
 
 
@@ -3184,5 +3328,11 @@ footer {
 
   .desc_stiky .cont_fecha {
     width: 100%;
+  }
+  .c_filtro{
+      flex-direction: column;
+  }
+  .txt_desc_section{
+      text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

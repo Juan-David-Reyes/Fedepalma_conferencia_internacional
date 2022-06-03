@@ -1320,12 +1320,26 @@ footer {
   position: relative;
   z-index: 5;
 }
+.grand_container_line .container_b .txts_b h6 {
+  margin: 10px 0 0;
+  color: var(--c4);
+  font-size: 18px;
+  font-weight: 400;
+}
+.grand_container_line .container_b .txts_b h6 + h3 {
+  margin: 0px 0 10px;
+}
+.grand_container_line .container_b .txts_b .btn_fill {
+  text-transform: initial;
+  font-size: 18px;
+}
 
 .grand_container_line .container_b .txts_b h3 {
   color: var(--txt-light);
   text-transform: uppercase;
   font-size: 2em;
   margin: 20px 0 10px;
+  max-width: 320px;
 }
 
 .btn_filter_agenda {
@@ -2309,7 +2323,7 @@ footer {
   box-sizing: border-box;
   border-radius: 4px;
   display: flex !important;
-  aligb-items: center;
+  align-items: center;
   font-size: 14px !important;
   text-align: center;
   outline: 0;
@@ -2899,6 +2913,176 @@ footer {
   background-color: #f5f5f5;
 }
 
+/* ESTILOS INTERNA EXPOSITORES */
+.c_cont1_expo {
+  padding: 40px 0;
+}
+
+.txt_desc_section {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.c_paginador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 60px 0;
+}
+.c_paginador a {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+.c_paginador .pagearrow {
+  color: #FFF;
+  background-color: var(--c4);
+}
+.c_paginador .page {
+  color: #555555;
+  background-color: #D9D9D9;
+  font-size: 18px;
+  transition: 300ms ease;
+}
+.c_paginador .page:hover {
+  background-color: #cdcdcd;
+}
+.c_paginador .page.active {
+  background-color: var(--color-btn);
+  color: var(--txt-light);
+}
+
+.c_cards_marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.c_cards_marcas .card_marca {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px 20px 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.c_cards_marcas .card_marca h5, .c_cards_marcas .card_marca h4 {
+  margin: 0;
+  color: var(--c2);
+}
+.c_cards_marcas .card_marca h5 {
+  font-weight: 400;
+}
+.c_cards_marcas .card_marca h4 {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.c_cards_marcas .card_marca picture {
+  width: 100%;
+  background: #F4F4F4;
+  border: 1px solid #EDEDED;
+  border-radius: 8px;
+  max-height: 120px;
+  display: inline-block;
+}
+.c_cards_marcas .card_marca picture img {
+  mix-blend-mode: multiply;
+  max-height: 120px;
+  /*  width: 100%; */
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+.c_cards_marcas .card_marca .datos_marca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.c_cards_marcas .card_marca .datos_marca a {
+  text-decoration: none;
+  color: #282828;
+}
+.c_cards_marcas .card_marca .datos_marca a:hover {
+  text-decoration: underline;
+}
+.c_cards_marcas .card_marca .social_marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid #d4d4d4;
+  padding: 10px 0 0;
+}
+.c_cards_marcas .card_marca .social_marca a {
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 100px;
+  color: #BEBEBE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+.c_cards_marcas .card_marca .social_marca a:hover {
+  color: var(--c3);
+}
+
+.s_cont1_expo, .s_banner_inscripcion, .s_filtro, .s_cards_marcas, .s_paginador {
+  background-color: #F2F2F2;
+}
+
+.c_filtro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 30px;
+  flex-wrap: wrap;
+}
+
+.cont_filtro input, .cont_filtro select {
+  width: 100%;
+  min-width: 240px;
+  max-width: 300px;
+  border-radius: 6px;
+  outline: 0;
+  border: 1px solid #d4d4d4;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #767676;
+}
+.cont_filtro input::-moz-placeholder, .cont_filtro select::-moz-placeholder {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.cont_filtro input:-ms-input-placeholder, .cont_filtro select:-ms-input-placeholder {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.cont_filtro input::placeholder, .cont_filtro select::placeholder {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.btn_fill.search {
+  border-radius: 6px;
+}
+
 /* ************ */
 /* RESPONSIVE */
 /* ************ */
@@ -3416,6 +3600,14 @@ footer {
 
   .desc_stiky .cont_fecha {
     width: 100%;
+  }
+
+  .c_filtro {
+    flex-direction: column;
+  }
+
+  .txt_desc_section {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
