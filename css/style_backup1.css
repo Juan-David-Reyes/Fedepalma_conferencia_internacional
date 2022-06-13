@@ -25,9 +25,7 @@
 html {
   scroll-behavior: smooth;
 }
-p{
-  line-height: 1.3;
-}
+
 .center {
   padding: 0 20px;
   box-sizing: border-box;
@@ -84,15 +82,9 @@ header .header .navbar_desk .cont_btn_menu_mobile {
   padding-right: 10px;
   box-sizing: border-box;
 }
-header .header .navbar_desk .cont_btn_menu_mobile a{
+header .header .navbar_desk .cont_btn_menu_mobile a {
   cursor: pointer;
   color: var(--txt-btn-c2);
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-header .header .navbar_desk .cont_btn_menu_mobile a span {
   font-size: 26px;
 }
 header .header .navbar_desk ul {
@@ -438,7 +430,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 0%), linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 30%, rgba(255, 255, 255, 0) 80.31%);
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 50%, rgba(255, 255, 255, 0) 80.31%);
 }
 .sliderHero .swiper-slide .img_bg_slider_hero img {
   width: 100%;
@@ -512,7 +504,7 @@ footer {
   width: 80%;
 }
 .swiperPatrocinadores .swiper-slide picture img {
-  width: 90%;
+  width: 70%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -536,7 +528,6 @@ footer {
   color: var(--c2);
   font-size: 40px;
   margin: 30px 0 50px;
-  text-align: center;
 }
 .tit_section h3 img {
   margin-right: 10px;
@@ -550,8 +541,7 @@ footer {
 
 .cont_gen_banner_visitas {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
@@ -566,13 +556,11 @@ footer {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: center;
 }
 .cont_visitas_banner span {
   font-weight: 800;
   color: var(--txt-light);
   font-size: 60px;
-  justify-content: center;
 }
 .cont_visitas_banner .cont_txt_visitas {
   display: flex;
@@ -675,9 +663,7 @@ footer {
 .s_incitacion_evento .tit_section h3 {
   margin-top: 30px;
 }
-.s_incitacion_evento .tit_section h3 p{
-  margin: 0;
-}
+
 .s_incitacion_evento {
   padding: 20px 0 100px;
 }
@@ -727,7 +713,7 @@ footer {
   color: var(--txt-light);
   gap: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4078431373);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .cont_gen_agenda .tit_section h3 {
   color: var(--txt-light);
@@ -737,14 +723,7 @@ footer {
   letter-spacing: 0.335em;
   text-transform: uppercase;
   font-size: 20px;
-  display: none;
 }
-.cont_gen_agenda .tit_section .tit_agenda_fecha.mobl{
-  display: none;
-}
-.cont_gen_agenda .tit_section .tit_agenda_fecha.mobl p{
-  margin: 0;
-} 
 
 .c_agenda {
   display: grid;
@@ -807,7 +786,7 @@ footer {
   width: 100%;
   padding: 4px;
   box-sizing: border-box;
-  margin: 14px 0;
+  margin: 4px 0;
   cursor: pointer;
 }
 
@@ -1013,9 +992,9 @@ footer {
   align-items: center;
 }
 .c_gracias picture {
-  max-width: 350px;
+  max-width: 400px;
   display: block;
-  margin: 0 auto 30px;
+  margin: auto;
 }
 .c_gracias picture img {
   width: 100%;
@@ -1055,6 +1034,9 @@ footer {
   height: 100%;
   background: linear-gradient(90deg, #F4F4F4 50%, rgba(255, 255, 255, 0) 81.77%);
   z-index: 1;
+}
+.s_header_int.modHeader_color::before {
+  background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 81.77%);
 }
 .s_header_int picture {
   display: inline-block;
@@ -1127,7 +1109,7 @@ footer {
   text-align: center;
 }
 .div_cols_bene .d_col ul {
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0;
 }
 .div_cols_bene .d_col ul li {
@@ -1208,26 +1190,12 @@ footer {
 .grand_container_line .container_b .txts_b {
   position: relative;
   z-index: 5;
-  h6{
-    margin: 10px 0 0;
-    color: var(--c4);
-    font-size: 18px;
-    font-weight: 400;
-    + h3{
-        margin: 0px 0 10px;
-        }
-    }
-    .btn_fill{
-        text-transform: initial;
-        font-size: 18px;
-    }
 }
 .grand_container_line .container_b .txts_b h3 {
   color: var(--txt-light);
   text-transform: uppercase;
   font-size: 2em;
   margin: 20px 0 10px;
-  max-width: 320px;
 }
 
 .btn_filter_agenda {
@@ -1254,7 +1222,7 @@ footer {
 
 .c_info_contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   justify-items: center;
 }
@@ -1268,10 +1236,9 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 365px;
+  max-width: 253px;
   min-height: 258px;
   overflow: hidden;
-  width: 100%;
 }
 .c_info_contact .card_info_contact:hover picture {
   opacity: 1;
@@ -1330,7 +1297,6 @@ footer {
   z-index: 5;
   width: 100%;
   gap: 8px;
-  word-break: break-all;
 }
 .c_info_contact .card_info_contact .datos_info a {
   text-decoration: none;
@@ -1619,9 +1585,7 @@ footer {
   font-size: 13px;
   padding-top: 3px;
 }
-.cont_input .formError{
-  left: 0!important;
-}
+
 .c_modulo_options {
   display: none;
   padding: 20px;
@@ -1677,7 +1641,7 @@ footer {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   box-sizing: border-box;
 }
 .c_btn_steps .btn_fill {
@@ -1809,11 +1773,10 @@ footer {
   font-size: 32px;
   margin: 0 20px 20px;
 }
-.calendar_x1 div p, .calendar_x2 div p{
+.calendar_x1 div, .calendar_x2 div {
   text-align: center;
   color: var(--txt-light);
   font-size: 15px;
-  margin: 0;
 }
 
 .calendar_x2 {
@@ -1862,11 +1825,24 @@ footer {
   overflow: hidden;
   transition: 300ms ease;
 }
+.swiperCalendar .swiper-slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(124, 167, 50, 0.8), rgba(124, 167, 50, 0.8)), linear-gradient(0deg, #7CA732, #7CA732), url("../images/diseno/05-convocatorias_conf/mic_bg.png");
+  background-blend-mode: normal, color, normal;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 300ms ease;
+}
 .swiperCalendar .swiper-slide:hover {
   background-color: var(--c3);
 }
-.swiperCalendar .swiper-slide:hover picture {
-  opacity: 0.2;
+.swiperCalendar .swiper-slide:hover::before {
+  opacity: 1;
 }
 .swiperCalendar .swiper-slide > div:last-child:not(.calendar_x1) {
   color: var(--txt-light);
@@ -1880,26 +1856,10 @@ footer {
   box-sizing: border-box;
   position: relative;
 }
-.c_calendar_slider picture{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(124, 167, 50, 0.8), rgba(124, 167, 50, 0.8)), linear-gradient(0deg, #7CA732, #7CA732), url("../images/diseno/05-convocatorias_conf/mic_bg.png");
-  background-blend-mode: normal, color, normal;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: 300ms ease;
-}
 
 .sub_txt_x2 {
   position: relative;
   z-index: 5;
-}
-.sub_txt_x2 p{
-  margin: 0;
-  font-size: 16px;
 }
 
 .s_reserva_stand {
@@ -2035,98 +1995,33 @@ footer {
   gap: 20px;
 }
 
-.swiperDocumentos .btn_outline{
-  min-height: 56px;
-  display: flex;
-  align-items: center;
+.tit_form_c {
+  position: relative;
 }
-.inicio_mbl{
-  display: none;
-}
-.dia_aside{
+.tit_form_c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
   width: 100%;
-  display: block;
+  height: 1px;
+  background-color: #D1D1D1;
+  z-index: 1;
 }
-.tit_mobile_auditorio{
-  display: none;
-  color: var(--txt-light);
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-.banner_publicidad picture, .c_banner_publicidad{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.banner_publicidad picture label, .c_banner_publicidad label{
-  margin: 0 auto 6px;
-  display: inline-block;
-  font-size: 14px;
-  color: #a2a2a2;
-  text-align: center;
-}
-.c_banner_publicidad label{
-  margin: 6px auto;
-}
-.banner_publicidad picture img, .c_banner_publicidad img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.c_banner_publicidad img{
-  max-width: 1024px;
-  max-height: 120px;
-  margin: 0 auto;
-}
-.formfile{
-  visibility: hidden;
-  height: 0!important;
-}
-.cta_txt_file label{
-  display:inline-block;
-}
-.cta_txt_file{
-  padding: 0 10px 10px;
-  box-sizing: border-box;
-  display:flex;
-  justify-content:space-between;
-}
-.txt_file_chosen{
-  width:100%;
-  text-align:center;
-  font-size:12px!important;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-  text-align: left;
-}
-.btn_fill_label{
-  width: 100%;
-  max-width: 182px;
-  content: 'Select files';
-  background-color: var(--color-btn)!important;
-  color: var(--txt-btn-c2)!important;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px 24px!important;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex!important;
-  align-items:center;
-  font-size: 14px!important;
-  text-align: center;
-  outline: 0;
-  cursor: pointer!important;
-  height:35px;
-  justify-content:center;
-  margin:0!important;
+.tit_form_c h4 {
+  color: var(--c1);
+  position: relative;
+  z-index: 2;
+  padding-right: 10px;
+  background-color: #FFFFFF;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* INTERNA DE LOGISTICA */
-
 .reverse_bg {
   background: url("../images/diseno/1-home/bg_sections-reverse.png") no-repeat center top;
   background-size: cover;
@@ -2332,7 +2227,7 @@ footer {
 }
 
 .datos_contacto_l_card {
-  padding: 10px;
+  padding: 10px 30px;
   box-sizing: border-box;
   background-color: var(--bg-color-light);
   width: 100%;
@@ -2361,7 +2256,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  width: 70%;
+  width: 100%;
 }
 .datos_contacto_l_card h4 {
   margin: 0;
@@ -2371,9 +2266,6 @@ footer {
   text-align: left;
   color: var(--txt-dark);
   text-decoration: none;
-  font-size: 15px;
-  word-wrap: break-word;
-  width: 100%;
 }
 .datos_contacto_l_card a:hover {
   text-decoration: underline;
@@ -2433,11 +2325,11 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: var(--txt-light);
-  font-size: 13px;
+  font-size: 15px;
   z-index: 1;
   top: initial;
 }
@@ -2537,7 +2429,7 @@ footer {
   position: relative;
 }
 
-.swiperQueHacer .swiper-slide,  .sliderVT .swiper-slide{
+.swiperQueHacer .swiper-slide {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
@@ -2546,14 +2438,7 @@ footer {
   overflow: hidden;
   transition: 300ms ease;
 }
-.sliderVT .swiper-slide{
-  min-height: 460px;
-}
-.c_sliders_workshop{
-  position: relative;
-}
-
-.swiperQueHacer .swiper-slide picture, .sliderVT .swiper-slide picture {
+.swiperQueHacer .swiper-slide picture {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2562,7 +2447,7 @@ footer {
   height: 100%;
   width: 100%;
 }
-.swiperQueHacer .swiper-slide picture img, .sliderVT .swiper-slide picture img {
+.swiperQueHacer .swiper-slide picture img {
   transition: 300ms ease;
   width: 100%;
   height: 100%;
@@ -2571,11 +2456,11 @@ footer {
   -o-object-position: center;
      object-position: center;
 }
-.swiperQueHacer .swiper-slide .tit_quehacer, .swiperQueHacer .swiper-slide .cta_quehacer, .sliderVT .swiper-slide .tit_quehacer, .sliderVT .swiper-slide .cta_quehacer{
+.swiperQueHacer .swiper-slide .tit_quehacer, .swiperQueHacer .swiper-slide .cta_quehacer {
   position: relative;
   z-index: 2;
 }
-.swiperQueHacer .swiper-slide .tit_quehacer, .sliderVT .swiper-slide .tit_quehacer{
+.swiperQueHacer .swiper-slide .tit_quehacer {
   color: var(--txt-light);
   text-transform: uppercase;
   width: 100%;
@@ -2586,14 +2471,13 @@ footer {
   margin: 0;
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.46);
   line-height: 1;
-  pointer-events: none;
 }
-.swiperQueHacer .swiper-slide .tit_quehacer span, .sliderVT .swiper-slide .tit_quehacer span{
+.swiperQueHacer .swiper-slide .tit_quehacer span {
   line-height: 1;
   font-size: 16px;
   font-weight: 400;
 }
-.swiperQueHacer .swiper-slide summary, .sliderVT .swiper-slide summary{
+.swiperQueHacer .swiper-slide summary {
   position: relative;
   z-index: 3;
   padding: 0 20px;
@@ -2603,9 +2487,8 @@ footer {
   opacity: 0;
   font-weight: 300;
   transition: 300ms ease;
-  pointer-events: none;
 }
-.swiperQueHacer .swiper-slide .cta_quehacer, .sliderVT .swiper-slide .cta_quehacer {
+.swiperQueHacer .swiper-slide .cta_quehacer {
   color: #FFF;
   width: 100%;
   position: relative;
@@ -2614,13 +2497,13 @@ footer {
   margin: 0 0 -50px;
   transition: 300ms ease;
 }
-.swiperQueHacer .swiper-slide .cta_quehacer a, .sliderVT .swiper-slide .cta_quehacer a{
+.swiperQueHacer .swiper-slide .cta_quehacer a {
   cursor: pointer;
 }
-.swiperQueHacer .swiper-slide .cta_quehacer a:hover, .sliderVT .swiper-slide .cta_quehacer a:hover{
+.swiperQueHacer .swiper-slide .cta_quehacer a:hover {
   text-decoration: underline;
 }
-.swiperQueHacer .swiper-slide .cta_quehacer::before, .sliderVT .swiper-slide .cta_quehacer::before{
+.swiperQueHacer .swiper-slide .cta_quehacer::before {
   content: "";
   position: absolute;
   left: calc(50% - 200px);
@@ -2632,9 +2515,10 @@ footer {
   background-color: var(--color-btn);
   z-index: -1;
 }
-.swiperQueHacer .swiper-slide::before, .sliderVT .swiper-slide::before {
+.swiperQueHacer .swiper-slide::before {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4588235294) 38.16%), linear-gradient(0deg, rgba(188, 188, 188, 0.9294117647), rgba(68, 68, 68, 0.5294117647));
+  /* background: linear-gradient(180deg, #00000078 0%, #00000000 38.16%), linear-gradient(0deg, #bcbcbc00, #bcbcbcbf); */
   opacity: 0.2;
   width: 100%;
   height: 100%;
@@ -2642,332 +2526,20 @@ footer {
   mix-blend-mode: multiply;
   z-index: 2;
   transition: 300ms ease;
-  pointer-events: none;
 }
-.swiperQueHacer .swiper-slide:hover picture img, .sliderVT .swiper-slide:hover picture img{
+.swiperQueHacer .swiper-slide:hover picture img {
   width: 108%;
   height: 108%;
 }
-.swiperQueHacer .swiper-slide:hover .cta_quehacer, .sliderVT .swiper-slide:hover .cta_quehacer{
+.swiperQueHacer .swiper-slide:hover .cta_quehacer {
   margin: 0;
 }
-.swiperQueHacer .swiper-slide:hover summary, .sliderVT .swiper-slide:hover {
+.swiperQueHacer .swiper-slide:hover summary {
   opacity: 1;
 }
-.swiperQueHacer .swiper-slide:hover::before, .sliderVT .swiper-slide:hover::before {
+.swiperQueHacer .swiper-slide:hover::before {
   opacity: 1;
 }
-
-.s_donde_llegar_logistica, .s_que_hacer_logistica{
-  background-color: #f5f5f5;
-}
-
-/* ESTILOS INTERNA EXPOSITORES */
-
-.c_cont1_expo{
-    padding: 40px 0;
-}
-
-.txt_desc_section{
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.c_paginador{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 60px 0;
-    a{
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        text-decoration: none;
-        color: #555555;
-        background-color: #D9D9D9;
-        font-size: 18px;
-        transition: 300ms ease;
-        cursor: pointer;
-        &:hover{
-          background-color: #cdcdcd;
-      }
-        &.jp-current{
-          background-color: var(--color-btn);
-          color: var(--txt-light);
-      }
-    }
-    .jp-previous, .jp-next{
-        color: #FFF;
-        background-color: var(--c4);
-    }
-
-}
-
-.c_cards_marcas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
-    justify-content: center;
-    gap: 20px;
-    .card_marca{
-        background: #FFFFFF;
-        border-radius: 12px;
-        padding: 20px 20px 10px;
-        box-sizing: border-box;
-        width: 100%;
-        h5, h4{
-            margin: 0;
-            color: var(--c2);
-        }
-        h5{
-          font-weight: 400; 
-        }
-        h4{
-            font-size: 20px;
-            margin: 0 0 20px;
-        }
-        picture{
-            width: 100%;
-            background: #F4F4F4;
-            border: 1px solid #EDEDED;
-            border-radius: 8px;
-            max-height: 120px;
-            display: inline-block;
-            img{
-                mix-blend-mode: multiply;
-                max-height: 120px;
-               /*  width: 100%; */
-                height: 100%;
-                object-fit: contain;
-                display: block;
-                margin: auto;
-            }
-        }
-        .datos_marca{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-            a{
-                text-decoration: none;
-                color: #282828;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
-        .social_marca{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border-top: 1px solid #d4d4d4;
-            padding: 10px 0 0;
-            a{
-                width: 30px;
-                display: inline-block;
-                height: 30px;
-                font-size: 20px;
-                border-radius: 100px;
-                color: #BEBEBE;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                transition: 300ms ease;
-                &:hover{
-                    color: var(--c3);
-                }
-            }
-        }
-    }
-}
-
-.s_filtro{
-    padding: 40px 0 0;
-}
-
-.s_cont1_expo, .s_banner_inscripcion, .s_filtro, .s_cards_marcas, .s_paginador{
-    background-color: #F2F2F2;
-}
-
-.c_filtro{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    padding: 0 0 30px;
-    flex-wrap: wrap;
-}
-.cont_filtro{
-    input, select{
-        width: 100%;
-        min-width: 240px;
-        max-width: 300px;
-        border-radius: 6px;
-        outline: 0;
-        border: 1px solid #d4d4d4;
-        padding: 8px;
-        box-sizing: border-box;
-        font-size: 14px;
-        color: #767676;
-        background: transparent;
-        height: 37px;
-        &::placeholder{
-            font-size: 14px;
-        opacity: .5;        }
-    }
-}
-
-.btn_fill.search{
-    border-radius: 6px;
-}
-
-.int_agenda{
-    background: #F2F2F2;
-    .cont_gen_agenda{
-        padding: 0 0 40px;
-    }
-    .col_gen_modulos{
-        overflow-y: initial;
-        max-height: initial;
-    }
-}
-
-/* ESTILOS DE INSCRIPOCIONES SEGUNDA PARTE */
-
-.cont_bg_sections{
-  padding: 80px 0;
-  box-sizing: border-box;
-  background-color: #F0F0F0;
-}
-
-.s_sliders_workshops{
-  .c_sliders_workshop{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-  .container_sliders_insc{
-    max-width: 300px;
-    margin: 0 auto;
-    position: relative;
-   }
-}
-
-
-.svt1 .swiper-button-next, .svt1.swiper-rtl .swiper-button-prev{
-  right: -20px;
-}
-.svt1 .swiper-button-prev, .svt1 .swiper-rtl .swiper-button-next{
-  left: -20px;
-}
-
-.svt2 .swiper-button-next, .svt2.swiper-rtl .swiper-button-prev{
-  right: -20px;
-}
-.svt2 .swiper-button-prev, .svt2 .swiper-rtl .swiper-button-next{
-  left: -20px;
-}
-
-.svt2 .swiper-button-next, .svt2 .swiper-button-prev, .svt1 .swiper-button-next, .svt1 .swiper-button-prev{
-  top: 60%;
-}
-
-.img_quehacer a{
-  height: 100%;
-  height: 100%;
-  margin: auto;
-}
-
-.s_bene2{
-  padding: 80px 0;
-  box-sizing: border-box;
-}
-
-.c_bene2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  picture{
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    max-height: 305px;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin: auto;
-      display: block;
-    }
-  }
-  .col_bene2{
-    .btn_fill{
-      background-color: #E6E6E6;
-      color: #5F5F5F;
-    }
-    .btn_fill.active{
-      color: #FFFFFF;
-      background-color: var(--c3);
-    }
-  }
-}
-
-.nav_bene2{
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.cont_desc_bene2{
-  padding: 30px 0;
-  ul{
-    margin: 0;
-    li{
-      list-style: none;
-      margin: 0 0 20px;
-      position: relative;
-      &::before{
-        content: "";
-        background: url(../images/diseno/arrow.svg) no-repeat center;
-        background-size: contain;
-        left: -20px;
-        top: 2px;
-        border-radius: 100px;
-        position: absolute;
-        width: 12px;
-        height: 12px;
-      }
-    }
-  }
-}
-
-.container_sliders_insc{
-  h3{
-    font-size: 32px;
-  }
-}
-
-.holder{
-  margin: 0;
-}
-
-
-
 
 /* ************ */
 /* RESPONSIVE */
@@ -3107,9 +2679,6 @@ footer {
 
   .s_header_int .center h1 {
     text-align: center;
-  }
-  .inicio_mbl{
-    display: inline-flex;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3282,7 +2851,6 @@ footer {
 
   .c_agenda {
     grid-template-columns: 1fr;
-    min-height: 310px;
   }
 
   .col_agenda_info {
@@ -3379,29 +2947,9 @@ footer {
   .c_reserva_stand h2 {
     font-size: 32PX;
   }
-  .cont_gen_agenda .tit_section .tit_agenda_fecha{
-    display: none;
-  }
-  .cont_gen_agenda .tit_section .tit_agenda_fecha.mobl{
-    display: inline-flex;
-  }
-  .tit_mobile_auditorio{
-    display: inline-flex;
-  }
-  .cont_gen_agenda .tit_section h3 {
-    margin: 0;
-  }
+
   .datos_contacto_l_card {
     max-width: 380px;
-  }
-  .c_bene2{
-    flex-direction: column;
-  }
-  .s_sliders_workshops .c_sliders_workshop{
-    grid-template-columns: 1fr;
-  }
-  .cont_bg_sections{
-    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -3478,6 +3026,7 @@ footer {
   .cont_gen_agenda .tit_section {
     gap: 12px;
   }
+
   .c_slider_pri_logistica {
     grid-template-columns: 1fr;
     max-height: 540px;
@@ -3487,10 +3036,4 @@ footer {
   .desc_stiky .cont_fecha {
     width: 100%;
   }
-  .c_filtro{
-      flex-direction: column;
-  }
-  .txt_desc_section{
-      text-align: left;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_backup1.css.map */

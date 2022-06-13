@@ -411,6 +411,32 @@ function sliderQueHacer(){
 
 }
 
+function sliderVT(){
+  
+  let swiper = new Swiper(".svt1 .sliderVT", {
+    navigation: {
+      nextEl: ".svt1 .swiper-button-next",
+      prevEl: ".svt1 .swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+  });
+
+}
+
+function sliderVT2(){
+  
+  let swiper = new Swiper(".svt2 .sliderVT", {
+    navigation: {
+      nextEl: ".svt2 .swiper-button-next",
+      prevEl: ".svt2 .swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+  });
+
+}
+
 function ctaLogistica(){
 
   const cta = document.querySelectorAll('.cont_cta_logistica a');
@@ -440,6 +466,8 @@ function ctaLogistica(){
 
 
 sliderHero();
+sliderVT();
+sliderVT2();
 swiperPatrocinadores();
 swiperGaleriaEvento();
 swiperDocumentos();
