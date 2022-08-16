@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --c1: #002913;
   --c2: #254412;
@@ -81,10 +80,8 @@ header .header .c_logo_header img {
 header .header .navbar_desk {
   grid-column: 2/3;
   display: grid;
-  align-items: baseline;
+  align-items: center;
   gap: 20px;
-  align-content: center;
-  height: 100%;
 }
 
 header .header .navbar_desk .cont_btn_menu_mobile {
@@ -112,34 +109,27 @@ header .header .navbar_desk > ul {
   align-items: center;
   list-style: none;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 20px;
   padding: 0;
-  margin: 0;
-  height: 100%;
 }
 
 header .header .navbar_desk > ul li {
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
   z-index: 1;
-  height: 100%;
 }
 
 header .header .navbar_desk ul > li > a {
   color: var(--txt-light);
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   height: 100%;
   padding: 8px;
   box-sizing: border-box;
   position: relative;
   text-align: center;
-  max-width: 100px;
-  display: flex;
-  align-items: center;
 }
 
 header .header .navbar_desk ul > li > a::before {
@@ -170,7 +160,6 @@ header .header .navbar_desk ul > li > a:hover::before {
 header .header .navbar_desk ul .c_lenguajes {
   border-left: 1px solid #e5e5e5;
   padding-left: 20px;
-  gap: 6px;
 }
 
 header .header .navbar_desk ul .c_lenguajes a {
@@ -178,9 +167,6 @@ header .header .navbar_desk ul .c_lenguajes a {
   box-sizing: border-box;
   border-radius: 4px;
   transition: 300ms ease;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 header .header .navbar_desk ul .c_lenguajes a::before {
@@ -579,7 +565,7 @@ footer {
 }
 
 .cont_gen_patrocinadores {
-  /* padding: 0 40px; */
+  padding: 0 40px;
   box-sizing: border-box;
 }
 
@@ -3016,8 +3002,6 @@ footer {
   padding: 20px 20px 10px;
   box-sizing: border-box;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .c_cards_marcas .card_marca h5, .c_cards_marcas .card_marca h4 {
@@ -3032,7 +3016,6 @@ footer {
 .c_cards_marcas .card_marca h4 {
   font-size: 20px;
   margin: 0 0 20px;
-  min-height: 50px;
 }
 
 .c_cards_marcas .card_marca picture {
@@ -3041,17 +3024,14 @@ footer {
   border: 1px solid #EDEDED;
   border-radius: 8px;
   max-height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  display: inline-block;
 }
 
 .c_cards_marcas .card_marca picture img {
   mix-blend-mode: multiply;
   max-height: 120px;
-  width: 90%;
-  height: 90%;
+  /*  width: 100%; */
+  height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
   display: block;
@@ -3061,20 +3041,15 @@ footer {
 .c_cards_marcas .card_marca .datos_marca {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 20px 0;
-  font-size: 14px;
-  min-height: 157px;
-  text-align: left;
 }
 
 .c_cards_marcas .card_marca .datos_marca a {
   text-decoration: none;
   color: #282828;
-  width: 100%;
-  word-break: break-all;
 }
 
 .c_cards_marcas .card_marca .datos_marca a:hover {
@@ -3162,7 +3137,6 @@ footer {
 
 .int_agenda {
   background: #F2F2F2;
-  padding-top: 70px;
 }
 
 .int_agenda .cont_gen_agenda {
@@ -3305,8 +3279,9 @@ footer {
 
 .submenu {
   position: absolute;
-  left: calc(50% - 45px);
-  top: 36px;
+  left: 0px;
+  right: 0px;
+  top: 30px;
   background-color: #FFF;
   border-radius: 4px;
   width: 100%;
@@ -3404,269 +3379,6 @@ footer {
   margin: 80px 0 30px;
 }
 
-.cont_gen_patrocinadores .swiper-button-prev {
-  left: 10px;
-}
-
-/* AJUSTE INTERNA AGENDA */
-.s_agenda.int_agenda .tit_agenda_fecha {
-  display: none;
-}
-
-.tit_agenda_fecha.mobl small {
-  font-size: 1em;
-}
-
-.i_arrow span {
-  margin: 0 0 0 8px;
-}
-
-/* ESTILOS INTERNA CONFERENCISTAS */
-.s_multitab_modulos {
-  margin: 40px 0;
-}
-
-.c_sesiones_speakers {
-  margin: 0 0 40px;
-}
-
-.container_desc_multitab {
-  padding: 30px;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-.c_multitab_modulos {
-  background-color: var(--c2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1050px;
-  margin: 0 auto;
-  border-radius: 32px;
-  overflow: hidden;
-  max-height: 230px;
-}
-.c_multitab_modulos picture {
-  display: inline-block;
-  position: relative;
-  max-width: 400px;
-}
-.c_multitab_modulos picture::before, .c_multitab_modulos picture::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 4px;
-  height: 100%;
-  background-color: var(--c4);
-}
-.c_multitab_modulos picture::after {
-  height: 40%;
-  background-color: var(--c5);
-  bottom: 0;
-}
-.c_multitab_modulos picture img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.tabs_modulos_conf {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.22);
-  color: #FFF;
-  border-radius: 20px;
-  gap: 10px;
-}
-.tabs_modulos_conf a {
-  cursor: pointer;
-}
-.tabs_modulos_conf a.active {
-  color: var(--color-btn);
-  font-weight: 600;
-}
-
-.desc_modulo_conf {
-  color: var(--txt-light);
-}
-.desc_modulo_conf h3 {
-  margin: 0 0 10px;
-}
-.desc_modulo_conf div {
-  font-weight: 300;
-}
-
-.heading_sesion {
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-}
-.heading_sesion::before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #EAEAEA;
-  margin: 0 auto;
-  position: absolute;
-}
-.heading_sesion h4 {
-  margin: 0;
-  position: relative;
-  z-index: 1;
-  background-color: #FFF;
-  padding: 0 20px 0 0;
-  box-sizing: border-box;
-}
-.heading_sesion .arrows {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  height: 35px;
-  z-index: 1;
-  background-color: #FFF;
-  padding: 0 0 0 20px;
-  box-sizing: border-box;
-}
-.heading_sesion .arrows div {
-  position: initial;
-  width: 35px;
-  height: 35px;
-  font-weight: 800;
-  margin: 0;
-}
-.heading_sesion .arrows div:after {
-  font-size: 16px;
-}
-
-.s_sesiones_speakers {
-  position: relative;
-}
-.s_sesiones_speakers .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 21px -8px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-}
-.s_sesiones_speakers picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  z-index: 5;
-}
-.s_sesiones_speakers picture a {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  background-color: var(--color-btn);
-  color: var(--txt-light);
-  font-weight: 600;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 14px;
-  text-decoration: none;
-  border-radius: 100px;
-  padding: 8px 16px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-.s_sesiones_speakers picture img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 200px;
-}
-
-.txt_tema_speaker, .txt_profile_speaker {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 20px 20px 10px;
-  box-sizing: border-box;
-  min-height: 140px;
-}
-.txt_tema_speaker h5, .txt_profile_speaker h5 {
-  font-size: 16px;
-  color: #666666;
-  margin: 0;
-}
-.txt_tema_speaker .txt_speaker, .txt_profile_speaker .txt_speaker {
-  font-size: 16px;
-  color: #666666;
-  font-weight: 400;
-}
-.txt_tema_speaker .btn_link, .txt_profile_speaker .btn_link {
-  text-align: right;
-  width: 100%;
-  font-size: 14px;
-  color: var(--c3);
-  cursor: pointer;
-}
-
-.txt_profile_speaker {
-  display: none;
-  font-size: 15px;
-  color: #666666;
-  background-color: var(--c2);
-  z-index: 1;
-}
-.txt_profile_speaker div:first-child {
-  color: #FFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-  margin: 0 0 20px;
-}
-
-.ctas_profile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ctas_profile a {
-  text-decoration: none;
-  color: #666;
-  font-size: 15px;
-  color: #FFF;
-  cursor: pointer;
-}
-.ctas_profile a:last-child {
-  color: var(--txt-btn-c1);
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.swiper.swiperSesion1, .swiper.swiperSesion2, .swiper.swiperSesion3, .swiper.swiperSesion4 {
-  padding: 30px 0;
-  box-sizing: border-box;
-}
-
 /* ************ */
 /* RESPONSIVE */
 /* ************ */
@@ -3679,9 +3391,11 @@ footer {
   header .header .navbar_desk ul {
     gap: 10px;
   }
+
   .sliderHero .swiper-slide {
     grid-template-columns: 3fr 1fr;
   }
+
   .sliderHero .swiper-slide .cont_desc_hero_txt h2 {
     font-size: 2em;
   }
@@ -3690,6 +3404,7 @@ footer {
   .close_mobile {
     display: flex;
   }
+
   header .header .navbar_desk ul {
     position: fixed;
     top: 0;
@@ -3705,240 +3420,283 @@ footer {
     box-sizing: border-box;
     margin: 0;
   }
+
   header .header .navbar_desk ul.active_nav_m {
     transform: translateX(0%);
   }
+
   .cont_btn_menu_mobile {
     display: flex !important;
   }
+
   header .header .navbar_desk ul > li {
     position: relative;
     gap: 10px !important;
   }
+
   header .header .navbar_desk ul > li > a {
     color: #FAFAFA;
     font-size: 1.5em;
-    max-width: initial;
   }
+
   header .header .navbar_desk ul .c_lenguajes {
     padding: 0 20px;
     border-right: 1px solid #e5e5e5;
   }
+
   header .header .navbar_desk ul li {
     gap: 20px;
-    height: initial;
   }
-  header .header .navbar_desk ul li a {
-    height: initial;
-  }
-  .header .navbar_desk .submenu a {
-    justify-content: center;
-  }
+
   .cont_gen_footer {
     gap: 30px;
   }
+
   .c_footer {
     padding: 30px 0;
   }
+
   .s_header_int picture {
     width: 70%;
   }
+
   .div_cols_bene {
     gap: 30px;
   }
+
   .sliderHero .swiper-slide {
     padding: 0 70px;
   }
+
   .cont_gen_hero .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: 10px;
   }
+
   .cont_gen_hero .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: 10px;
   }
+
   .cont_gen_banner_visitas .txt_banner_1 {
     font-size: 32px;
   }
+
   .cont_visitas_banner span {
     font-size: 40px;
   }
+
   .cont_visitas_banner .cont_txt_visitas div {
     font-size: 20px;
   }
+
   .cont_cards_modulos .card_modulo {
     padding: 10px;
   }
+
   .cont_cards_modulos .card_modulo .card_datos .name_conferencia {
     font-size: 15px;
   }
+
   .c_agenda nav ul li.active_dia::after, .c_agenda nav ul li.active_dia::before {
     display: none;
   }
+
   .cont_cards_modulos .card_modulo .card_datos .name_speaker {
     font-size: 10px;
   }
+
   .divisor_info_modulo div {
     text-align: left;
   }
+
   .c_agenda nav ul li {
     border-radius: 8px !important;
   }
+
   .c_info_contact {
     grid-template-columns: 1fr 1fr;
   }
+
   .c_info_contact .card_info_contact {
     max-width: initial;
     width: 100%;
   }
+
   .s_header_int .center h1 {
     text-align: center;
   }
+
   .inicio_mbl {
     display: inline-flex;
   }
+
   /* JUSTES MOBILE MENU */
   .navbar_desk ul li {
     flex-direction: column;
   }
+
   .navbar_desk ul li .fa-chevron-down {
     display: none;
   }
+
   .header .navbar_desk .submenu {
     position: relative;
     background: transparent;
-    left: calc(50% - 45px);
+    right: 0;
+    left: 0;
     width: 100%;
     max-width: initial;
     box-shadow: none;
     display: block;
     padding: 0 20px;
   }
+
   .header .navbar_desk .submenu a {
     color: var(--txt-light) !important;
   }
+
   .menu_int_agenda_mobile {
     display: block;
   }
+
   .int_agenda .tit_mobile_auditorio {
     color: #002913;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 0 0 10px;
-  }
-  .s_agenda.int_agenda .tit_agenda_fecha {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 0 0 10px;
-  }
-  /* ESTILOS CONFERENCISTAS› */
-  .c_multitab_modulos picture {
-    max-width: 300px;
   }
 }
 @media screen and (max-width: 768px) {
   .cont_miga {
     display: none;
   }
+
   .cont_gen_footer {
     grid-template-columns: 1fr;
   }
+
   .cont_logo {
     display: flex;
     justify-content: center;
   }
+
   .cont_logo a {
     max-width: 300px;
   }
+
   .cont_info_footer, .cont_redes_footer {
     text-align: center;
   }
+
   .c_items_redes_footer {
     justify-content: center;
   }
+
   header .header .c_logo_header {
     width: 120px;
   }
+
   .s_header_int picture {
     width: 100%;
   }
+
   .s_header_int::before {
     background: linear-gradient(90deg, rgba(244, 244, 244, 0.8392156863) 50%, rgba(255, 255, 255, 0.69) 81.77%);
   }
+
   .s_header_int .center {
     justify-content: center;
   }
+
   .cont_miga {
     left: 10%;
     top: 34px;
   }
+
   .s_header_int .center h1 {
     font-size: 32px;
   }
+
   .s_header_int {
     max-height: 100px;
   }
+
   .div_cols_bene {
     grid-template-columns: 1fr;
   }
+
   .div_cols_bene .d_col ul {
     padding-left: 20px;
   }
+
   .grand_container_line .container_b::before {
     background: linear-gradient(90deg, rgba(27, 51, 13, 0.9411764706) 28.6%, rgba(34, 63, 17, 0.78) 73.73%);
   }
+
   .grand_container_line .container_b {
     grid-template-columns: 1fr;
   }
+
   .grand_container_line .container_b .txts_b {
     text-align: center;
   }
+
   .tit_section h3 {
     font-size: 28px;
   }
+
   .tit_section h3 img {
     width: 11%;
   }
+
   .s_beneficios_int {
     padding: 20px 0 60px;
   }
+
   .sliderHero .swiper-slide {
     grid-template-columns: 1fr;
   }
+
   .sliderHero .swiper-slide .cont_desc_hero_txt h2 {
     text-align: center;
   }
+
   .sliderHero .swiper-slide .cont_desc_hero_txt .desc_txt {
     text-align: center;
     font-size: 16px;
   }
+
   .sliderHero .swiper-slide .img_bg_slider_hero::before {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.9607843137) 0%, rgba(255, 255, 255, 0.83) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 80.31%);
   }
+
   .sliderHero .swiper-slide .cont_desc_hero_txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .cont_gen_ini_evento {
     grid-template-columns: 1fr;
   }
+
   .cont_ctas {
     flex-wrap: wrap;
   }
+
   .col_pic_event picture {
     max-width: initial;
   }
+
   .cont_gen_banner_visitas {
     grid-template-columns: 1fr;
     gap: 10px;
   }
+
   .cont_visitas_banner {
     justify-content: center;
   }
+
   .btn_filter_agenda {
     display: none;
   }
+
   .btn_filter_agenda {
     display: flex;
     justify-content: center;
@@ -3946,19 +3704,24 @@ footer {
     padding: 8px;
     box-sizing: border-box;
   }
+
   .cont_gen_agenda .tit_section {
     gap: 20px;
   }
+
   .cont_gen_agenda .tit_section .tit_agenda_fecha {
     font-size: 14px;
   }
+
   .cont_gen_agenda .tit_section {
     display: grid;
     grid-template-columns: 1fr 2fr 60px;
   }
+
   .cont_gen_agenda {
     padding: 10px 0;
   }
+
   .c_agenda aside {
     position: absolute;
     top: 100px;
@@ -3972,226 +3735,231 @@ footer {
     box-sizing: border-box;
     overflow-y: scroll;
   }
+
   .c_agenda {
     grid-template-columns: 1fr;
     min-height: 410px;
   }
+
   .col_agenda_info {
     border-radius: 8px;
   }
+
   .col_agenda_info .title_modulo {
     font-size: 22px;
   }
+
   .divisor_info_modulo::before {
     display: none;
   }
+
   .divisor_info_modulo::after {
     display: none;
   }
+
   .divisor_info_modulo div {
     width: 100%;
     justify-content: flex-start;
   }
+
   .divisor_info_modulo div {
     font-size: 14px;
   }
+
   .item_contador {
     padding: 0 10px;
   }
+
   .item_contador span {
     font-size: 30px;
   }
+
   .item_contador .label_contador {
     font-size: 16px;
   }
+
   .s_contador {
     margin-top: 0;
   }
+
   .subtitle {
     font-size: 12px;
   }
+
   .s_incitacion_evento {
     padding: 20px 0 30px;
   }
+
   .s_galeria_e {
     padding: 20px 0;
   }
+
   .cont_galeria_event {
     margin-top: 30px;
   }
+
   .s_agenda {
     padding-bottom: 20px;
   }
+
   .c_agenda nav ul li {
     width: 100%;
   }
+
   .cont_cards_modulos {
     padding: 0;
   }
+
   .cont_cards_modulos .card_modulo {
     pad: 10px;
   }
+
   .cont_cards_modulos .card_modulo .card_horario {
     font-size: 13px;
     margin-right: 20px;
     padding-right: 20px;
   }
+
   .c_cards_beneficios {
     grid-template-columns: 1fr;
   }
+
   .c_cards_beneficios .card_beneficio {
     max-width: initial;
   }
+
   .c_reserva_stand {
     grid-template-columns: 1fr;
   }
+
   .c_reserva_stand h2 {
     font-size: 32PX;
   }
+
   .cont_gen_agenda .tit_section .tit_agenda_fecha {
     display: none;
   }
+
   .cont_gen_agenda .tit_section .tit_agenda_fecha.mobl {
     display: inline-flex;
   }
+
   .tit_mobile_auditorio {
     display: inline-flex;
   }
+
   .cont_gen_agenda .tit_section h3 {
     margin: 0;
   }
+
   .datos_contacto_l_card {
     max-width: 380px;
   }
+
   .c_bene2 {
     flex-direction: column;
   }
+
   .s_sliders_workshops .c_sliders_workshop {
     grid-template-columns: 1fr;
   }
+
   .cont_bg_sections {
     padding: 0;
-  }
-  /* ESTILOS CONFERENCISTAS› */
-  .c_multitab_modulos {
-    flex-direction: column;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
-  .c_multitab_modulos picture {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    max-height: 200px;
-    overflow: hidden;
-  }
-  .c_multitab_modulos picture img {
-    -o-object-position: center;
-       object-position: center;
-  }
-  .c_multitab_modulos picture::before, .c_multitab_modulos picture::after {
-    width: 100%;
-    height: 4px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: initial;
-  }
-  .c_multitab_modulos picture::after {
-    width: 30%;
-  }
-  .container_desc_multitab {
-    padding: 20px;
-    gap: 20px;
-  }
-  .tabs_modulos_conf {
-    padding: 10px;
-  }
-  .tabs_modulos_conf a {
-    font-size: 14px;
-  }
-  .desc_modulo_conf div {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
   header .header .navbar_desk ul li a {
     font-size: 1.2em;
   }
+
   .tit_section h3 {
     font-size: 24px;
   }
+
   .sliderHero .swiper-slide {
     padding: 0px 30px;
   }
+
   .sliderHero .swiper-slide .cont_desc_hero_txt .desc_txt {
     font-size: 14px;
   }
+
   .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next {
     width: 30px;
     height: 30px;
   }
+
   .c_info_contact {
     grid-template-columns: 1fr;
   }
+
   .cont_input_x2 {
     grid-template-columns: 1fr;
     gap: 0;
   }
+
   .c_slider_mapa {
     padding: 0 25px;
   }
+
   .c_slider_mapa .mySwiper .swiper-wrapper {
     justify-content: center;
   }
+
   .s_mapa .center {
     padding: 0;
   }
+
   .c_txt_patrocinadores .cont_doble_btn {
     grid-template-columns: 1FR;
   }
+
   .c_slider_mapa .mySwiper .swiper-slide {
     border-radius: 8px;
   }
+
   .c_beneficios .tit_section h3 {
     margin-top: 0;
   }
+
   .cont_galeria_event {
     padding: 0 30px;
   }
+
   .cont_gen_agenda .tit_section h3 img {
     width: 24px;
   }
+
   .cont_gen_agenda .tit_section .tit_agenda_fecha {
     grid-column: 1/2 span;
   }
+
   .cont_gen_agenda .tit_section h3 {
     margin: 0;
   }
+
   .cont_gen_agenda .tit_section {
     gap: 12px;
   }
+
   .c_slider_pri_logistica {
     grid-template-columns: 1fr;
     max-height: 540px;
     padding: 14px;
   }
+
   .desc_stiky .cont_fecha {
     width: 100%;
   }
+
   .c_filtro {
     flex-direction: column;
   }
+
   .txt_desc_section {
     text-align: left;
   }
-  .swiperPatrocinadores .swiper-slide picture img {
-    width: 60%;
-  }
-  .cont_gen_patrocinadores .swiper-button-next, .cont_gen_patrocinadores .swiper-button-prev {
-    bottom: 22%;
-  }
 }
 /*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

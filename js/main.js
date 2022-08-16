@@ -434,8 +434,8 @@ function sliderVT2(){
     spaceBetween: 20,
     slidesPerView: 1,
   });
-
 }
+
 
 function ctaLogistica(){
 
@@ -468,6 +468,7 @@ function ctaLogistica(){
 sliderHero();
 sliderVT();
 sliderVT2();
+/* sliderVtEventos(); */
 swiperPatrocinadores();
 swiperGaleriaEvento();
 swiperDocumentos();
